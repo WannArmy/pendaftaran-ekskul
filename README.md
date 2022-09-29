@@ -13,8 +13,10 @@ Felis<br>
 <h2>Ada 3 Jenis User:</h2><br>
 <h3>Admin (Ketua Ekskul)</h3><br>
 -) Akses Akun<br>
--) Akses Data Ekskul, Jadwal, Saran, History Saran<br>
+-) Akses Data Ekskul, Jadwal, Saran<br>
 <i>CRUD</i><br>
+-) Akses Data History Saran<br>
+<i>Read Delete</i>
 
 <h3>Guru</h3><br> 
 -) Akses Data Ekskul, Jadwal<br>
@@ -28,3 +30,14 @@ Felis<br>
 -) Akses Tampilan Daftar ekskul dan Saran<br>
 <i>Create Read</i><br>
 
+<h2> Ada Tampilan </h2><br>
+<h3>Landing Page</h3><br>
+<h3>Dashboard</h3><br>
+<h3>Login</h3><br>
+<h3>Register</h3><br>
+<h3>Form Daftar(create & edit)</h3><br>
+<h3>Form Saran(create)</h3><br>
+<h3>History Saran</h3><br>
+<h3>Form Data Ekskul(create & edit)</h3><br>
+<h3>Form Data Jadwal(create & edit)</h3><br>
+<h3>Form Data Saran(create & edit)</h3><br>
