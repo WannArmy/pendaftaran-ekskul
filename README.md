@@ -14,17 +14,17 @@ Felis<br>
 <h3>Admin (Ketua Ekskul)</h3><br>
 -) Akses Akun<br>
 -) Akses Data Ekskul, Jadwal, Saran, History Saran<br>
-CRUD<br>
+<i>CRUD</i><br>
 
 <h3>Guru</h3><br> 
 -) Akses Data Ekskul, Jadwal<br>
-Read Update<br>
+<i>Read Update</i><br>
 -) Akses Data Saran<br>
-Read Delete<br>
+<i>Read Delete</i><br>
 
 <h3>Siswa</h3><br>
 -) Akses Data Ekskul, Jadwal<br>
-Read<br>
+<i>Read</i><br>
 -) Akses Tampilan Daftar ekskul dan Saran<br>
-Create Read<br>
+<i>Create Read</i><br>
 
