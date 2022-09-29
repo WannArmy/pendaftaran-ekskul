@@ -1,20 +1,18 @@
-# pendaftaran-ekskul
+<h1>Kelompok:</h1>
 
-Kelompok:
-
-~ ~ ~ Backend ~ ~ ~<br>
+<h2>~ ~ ~ Backend ~ ~ ~</h2><br>
 Janssen <br>
 Richie <br>
 Steaven S<br>
 
-~ ~ ~ Frontend ~ ~ ~<br>
+<h2>~ ~ ~ Frontend ~ ~ ~</h2><br>
 Shela<br>
 Yogi<br>
 Timotius<br>
 Felis<br>
-<hr>
-~ ~ ~ Konsep ~ ~ ~<br>
-Ada 3 Jenis User:<br>
+
+<h2>~ ~ ~ Konsep ~ ~ ~</h2><br>
+<h1>Ada 3 Jenis User:</h1><br>
 <h2>Admin (Ketua Ekskul)</h2><br>
 -) Akses Akun<br>
 -) Akses Data Ekskul, Jadwal, Saran, History Saran<br>
