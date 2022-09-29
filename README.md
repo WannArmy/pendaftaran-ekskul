@@ -30,7 +30,7 @@ Felis<br>
 -) Akses Tampilan Daftar ekskul dan Saran<br>
 <i>Create Read</i><br>
 
-<h2> Ada Tampilan </h2><br>
+<h2> Ada 13 Tampilan </h2><br>
 <h3>Landing Page</h3><br>
 <h3>Dashboard</h3><br>
 <h3>Login</h3><br>
