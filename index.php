@@ -1,3 +1,3 @@
 <?php
-header('frontend/dashboard');
+header('frontend/landingpage.php');
 ?>
