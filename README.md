@@ -12,7 +12,7 @@ Shela<br>
 Yogi<br>
 Timotius<br>
 Felis<br>
-
+<hr>
 ~ ~ ~ Konsep ~ ~ ~<br>
 Ada 3 Jenis User:<br>
 <h2>Admin (Ketua Ekskul)</h2><br>
@@ -30,5 +30,5 @@ Read Delete<br>
 -) Akses Data Ekskul, Jadwal<br>
 Read<br>
 -) Akses Tampilan Daftar ekskul dan Saran<br>
-Create Read
+Create Read<br>
 
