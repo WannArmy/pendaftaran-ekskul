@@ -13,7 +13,7 @@ Yogi<br>
 Timotius<br>
 Felis<br>
 
-~ ~ ~ Konsep ~ ~ ~
+~ ~ ~ Konsep ~ ~ ~<br>
 Ada 3 Jenis User:<br>
 <h2>Admin (Ketua Ekskul)</h2><br>
 -) Akses Akun<br>
@@ -28,7 +28,7 @@ Read Delete<br>
 
 <h2>Siswa</h2><br>
 -) Akses Data Ekskul, Jadwal<br>
-Read
+Read<br>
 -) Akses Tampilan Daftar ekskul dan Saran<br>
 Create Read
 
