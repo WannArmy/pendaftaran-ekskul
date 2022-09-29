@@ -10,5 +10,5 @@ Steaven S<br>
 ~ ~ ~ Frontend ~ ~ ~<br>
 Shela<br>
 Yogi<br>
-Timotius A<br>
+Timotius<br>
 Felis
