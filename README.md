@@ -2,13 +2,13 @@
 
 Kelompok:
 
-~ ~ ~ Backend ~ ~ ~
-Janssen
-Richie
-Steaven S
+~ ~ ~ Backend ~ ~ ~<br>
+Janssen <br>
+Richie <br>
+Steaven S<br>
 
-~ ~ ~ Frontend ~ ~ ~
-Shela
-Yogi
-Timotius
+~ ~ ~ Frontend ~ ~ ~<br>
+Shela<br>
+Yogi<br>
+Timotius<br>
 Felis
