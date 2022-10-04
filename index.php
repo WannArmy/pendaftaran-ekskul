@@ -1,3 +1,3 @@
 <?php
-header('frontend/landingpage.php');
+header('frontend/landing-page/landingpage.php');
 ?>
