@@ -206,10 +206,10 @@
                                 <a class="mt-30" href="index.html"><img src="../assets/images/logo-cktc.png" width="13%" alt="Logo"></a>
 
                                 <ul class="social mt-30">
-                                    <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                    <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-instagram-original"></i></a></li>
-                                    <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100022463173477"><i class="lni-facebook-filled"></i></a></li>
+                                    <!-- <li><a href="#"><i class="lni-twitter-original"></i></a></li> -->
+                                    <li><a href="https://www.instagram.com/smkcintakasihtzuchi/"><i class="lni-instagram-original"></i></a></li>
+                                    <!-- <li><a href="#"><i class="lni-linkedin-original"></i></a></li> -->
                                 </ul>
                             </div> <!-- footer logo -->
                             
