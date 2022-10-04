@@ -43,7 +43,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
-                            <a class="navbar-brand" href="#">
+                            <a class="navbar-brand" href="#home">
                                 <img src="../assets/images/logo-cktc.png" width="13%" alt="Logo">
                             </a>
 
