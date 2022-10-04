@@ -13,22 +13,22 @@
     <title>Ekstrakurikuler | SMK CINTA KASIH TZU CHI</title>
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
     <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="../assets/css/LineIcons.css">
+    <link rel="stylesheet" href="assets/css/LineIcons.css">
 
     <!--====== Magnific Popup css ======-->
-    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="../assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 
 </head>
@@ -44,7 +44,7 @@
                     <div class="col-lg-12">
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="#home">
-                                <img src="../assets/images/logo-cktc.png" width="13%" alt="Logo">
+                                <img src="assets/images/logo-cktc.png" width="13%" alt="Logo">
                             </a>
 
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,7 +73,7 @@
             </div> <!-- container -->
         </div> <!-- navgition -->
 
-        <div id="home" class="header-hero bg_cover" style="background-image: url(../assets/images/header-bg.jpg)">
+        <div id="home" class="header-hero bg_cover" style="background-image: url(assets/images/header-bg.jpg)">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-8 col-lg-10">
@@ -81,7 +81,7 @@
                             <h3 class="header-title">Pilih ekstrakurikuler kesukaanmu di sini</h3>
                             <p class="text">ORANG TERPELAJAR MENGGUNAKAN WAKTU LUANGNYA UNTUK BELAJAR</p>
                             <ul class="header-btn">
-                                <li><a class="main-btn btn-one" href="#">Login</a></li>
+                                <li><a class="main-btn btn-one" href="login/">Login</a></li>
                                 <li><a class="main-btn btn-two" href="#">Register</i></a></li>
                             </ul>
                         </div> <!-- header content -->
@@ -89,7 +89,7 @@
                 </div> <!-- row -->
             </div> <!-- container -->
             <div class="header-shape">
-                <img src="../assets/images/header-shape.svg" alt="shape">
+                <img src="assets/images/header-shape.svg" alt="shape">
             </div>
         </div> <!-- header content -->
     </header>
@@ -103,7 +103,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-title pb-10">
-                        <h4 class="title">Bidang ekstrakurikuler</h4>
+                        <h4 class="title">Bidang Ekstrakurikuler</h4>
                         <p class="text">SMK Cinta Kasih Tzu Chi menyediakan beberapa ekstrakurikuler yang seru dan gokil dimana semuanya mengedukasi kita semua!</p>
                     </div> <!-- section title -->
                 </div>
@@ -158,7 +158,7 @@
         </div> <!-- conteiner -->
         <div class="services-image d-lg-flex align-items-center">
             <div class="image">
-                <img src="../assets/images/services.png" alt="Services">
+                <img src="assets/images/services.png" alt="Services">
             </div>
         </div> <!-- services image -->
     </section>
@@ -203,7 +203,7 @@
                     <div class="col-lg-12">
                         <div class="footer-logo-support d-md-flex align-items-end justify-content-between">
                             <div class="footer-logo d-flex align-items-end">
-                                <a class="mt-30" href="index.html"><img src="../assets/images/logo-cktc.png" width="13%" alt="Logo"></a>
+                                <a class="mt-30" href="index.html"><img src="assets/images/logo-cktc.png" width="13%" alt="Logo"></a>
 
                                 <ul class="social mt-30">
                                     <li><a href="https://www.facebook.com/profile.php?id=100022463173477"><i class="lni-facebook-filled"></i></a></li>
@@ -229,7 +229,7 @@
                         <div class="footer-link">
                             <h6 class="footer-title">Form & Web</h6>
                             <ul>
-                                <li><a href="#">Login</a></li>
+                                <li><a href="login/">Login</a></li>
                                 <li><a href="#">Register</a></li>
                             </ul>
                         </div> <!-- footer link -->
@@ -251,22 +251,22 @@
     <!--====== BACK TO TOP PART ENDS ======-->
 
     <!--====== jquery js ======-->
-    <script src="../assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="../assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
 
     <!--====== Scrolling Nav js ======-->
-    <script src="../assets/js/jquery.easing.min.js"></script>
-    <script src="../assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
 
     <!--====== Magnific Popup js ======-->
-    <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
     <!--====== Main js ======-->
-    <script src="../assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 

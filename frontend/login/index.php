@@ -16,7 +16,7 @@
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Login #7</title>
+    <title>Login</title>
   </head>
   <body>
   
@@ -33,17 +33,17 @@
             <div class="col-md-8">
               <div class="mb-4">
               <h3>Sign In</h3>
-              <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+              <p class="mb-4">"Ekspresi wajah seseorarng merupakan cerminan dari kondisi batinnya."<br><span style="float:right;">- - Master Cheng Yen</span></p><br>
             </div>
             <form action="#" method="post">
               <div class="form-group first">
                 <label for="username">Username</label>
-                <input type="text" class="form-control" id="username">
+                <input type="text" name="username" class="form-control" id="username">
 
               </div>
               <div class="form-group last mb-4">
                 <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <input type="password" name="password" class="form-control" id="password">
                 
               </div>
               
@@ -56,7 +56,11 @@
               </div>
 
               <input type="submit" value="Log In" class="btn btn-block btn-primary">
-
+              <br>
+              <center>
+              <p class="mb-4">Belum Punya akun? <a href="../register/">Register Disini</a></p>
+              </center>
+<!-- 
               <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
               
               <div class="social-login">
@@ -69,7 +73,7 @@
                 <a href="#" class="google">
                   <span class="icon-google mr-3"></span> 
                 </a>
-              </div>
+              </div> -->
             </form>
             </div>
           </div>
