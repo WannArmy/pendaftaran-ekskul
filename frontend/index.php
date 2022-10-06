@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -61,9 +64,19 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#service">ABOUT</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#contact">REGISTER</a>
-                                    </li>
+                                    <?php
+                                    if(!isset($_SESSION['username'])){
+                                        echo "<li class='nav-item'>
+                                        <a class='page-scroll' href='#contact'>REGISTER</a>
+                                    </li>";
+                                    }
+                                    else{
+                                        echo "<li class='nav-item'>
+                                        <a class='page-scroll' href='#'>".$_SESSION['username']."</a>
+                                        </li>";
+                                    };
+                                    ?>
+
                                 </ul>
                             </div>
 
@@ -81,8 +94,15 @@
                             <h3 class="header-title">Pilih ekstrakurikuler kesukaanmu di sini</h3>
                             <p class="text">ORANG TERPELAJAR MENGGUNAKAN WAKTU LUANGNYA UNTUK BELAJAR</p>
                             <ul class="header-btn">
-                                <li><a class="main-btn btn-one" href="login/">Login</a></li>
-                                <li><a class="main-btn btn-two" href="#">Register</i></a></li>
+                            <?php
+                                    if(!isset($_SESSION['username'])){
+                                        echo "<li><a class='main-btn btn-one' href='login/'>Login</a></li>
+                                        <li><a class='main-btn btn-two' href='#'>Register</i></a></li>";
+                                    }
+                                    else{
+                                        echo "<li><a class='main-btn btn-one' href='#'>Ayo Lihat Daftar Ekskul</a></li>";
+                                    };
+                                    ?>
                             </ul>
                         </div> <!-- header content -->
                     </div>
@@ -173,6 +193,11 @@
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-10">
                         <h4 class="title">Tunggu apalagi</h4>
+                        <?php
+                                    if(!isset($_SESSION['username'])){
+                                    
+                                        ?>
+                                        
                         <p class="text">Bagi teman-teman yang berminat bergabung dengan ekskul untuk belajar dan bersenang-senang bersama, kalian bisa mendaftar di link berikut</p>
                     </div> <!-- section title -->
                 </div>
@@ -189,6 +214,30 @@
                     </div> <!-- row -->
                 </div>
             </div> <!-- row -->
+            <?php
+                                    }
+                                    else{
+                                        ?>
+                                        
+                                        <p class="text">Bagi teman-teman yang berminat bergabung dengan ekskul untuk belajar dan bersenang-senang bersama, ayo langsung daftar di link berikut</p>
+                                        </div> <!-- section title -->
+                                    </div>
+                                </div> <!-- row -->
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-8">
+                                        <div class="contact-form">
+                                                    <div class="col-md-12">
+                                                        <div class="single-form form-group text-center">
+                                                            <a href="#" class="main-btn">Daftar</a>
+                                                        </div> <!-- single form -->
+                                                    </div>
+                                                </div> <!-- row -->
+                                        </div> <!-- row -->
+                                    </div>
+                                </div> <!-- row -->
+                                <?php
+                                    };
+                                    ?>
         </div> <!-- conteiner -->
     </section>
 
@@ -229,8 +278,15 @@
                         <div class="footer-link">
                             <h6 class="footer-title">Form & Web</h6>
                             <ul>
-                                <li><a href="login/">Login</a></li>
-                                <li><a href="#">Register</a></li>
+                            <?php
+                                    if(!isset($_SESSION['username'])){
+                                        echo "<li><a href='login/'>Login</a></li>
+                                        <li><a href='#'>Register</a></li>";
+                                    }
+                                    else{
+                                        echo "<li><a href='../../backend/logout.php'>Logout</a></li>";
+                                    };
+                                    ?>
                             </ul>
                         </div> <!-- footer link -->
                     </div>

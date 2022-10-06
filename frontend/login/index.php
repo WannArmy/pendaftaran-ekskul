@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+  echo "<script>if(confirm('Anda Sudah Login Ke Website ini, Apakah Anda Ingin Logout?')){ location.href=('../../backend/logout.php'); }else{ location.href=(../dashboard/);</script>";
+};
+?>
 <!doctype html>
 <html lang="en">
   <head>

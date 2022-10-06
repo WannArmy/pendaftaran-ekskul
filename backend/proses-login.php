@@ -11,7 +11,9 @@ if($check > 0){
     $query = mysqli_query($db,"SELECT * FROM user WHERE username='$username' AND password='$password'");
     while($rows = mysqli_fetch_array($query)){
         $hak = $rows['hak_akses'];
+        $id = $rows['id'];
     };
+    $_SESSION['id']=$id;
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
     $_SESSION['hak-akses']=$hak;
