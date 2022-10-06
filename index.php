@@ -1,3 +1,3 @@
 <?php
-header('frontend/landingpage.php');
+echo "<script>location.href=('frontend/')</script>";
 ?>
