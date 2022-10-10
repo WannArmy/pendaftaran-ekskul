@@ -61,13 +61,6 @@
                                     <input type="password" name="password" class="form-control" id="password">
 
                                 </div>
-                                <div class="form-group last mb-4" hidden>
-                                    <label for="hak_akses">Akses:</label>
-                                    <select id="hak_akses" name="hak_akses">
-                                        <option value="murid">Murid</option>
-                                    </select>
-
-                                </div>
                                 <input type="submit" value="Register" class="btn btn-block btn-primary">
                                 <!-- 
               <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
