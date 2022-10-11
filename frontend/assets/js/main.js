@@ -1,11 +1,11 @@
-$(function() {
+(function($){
     
     "use strict";
     
     //===== Prealoder
     
     $(window).on('load', function(event) {
-        $('#preloader').delay(500).fadeOut(500);
+        $('.preloader').delay(500).fadeOut(500);
     });
     
     
@@ -29,18 +29,18 @@ $(function() {
     
     //===== Sticky
     
-    $(window).on('scroll',function(event) {    
+    $(window).on('scroll', function(event) {    
         var scroll = $(window).scrollTop();
         if (scroll < 10) {
-            $(".navgition").removeClass("sticky");
-        }else{
-            $(".navgition").addClass("sticky");
+            $(".navigation").removeClass("sticky");
+        } else{
+            $(".navigation").addClass("sticky");
         }
     });
     
     
     //===== Section Menu Active
-    
+
     var scrollLink = $('.page-scroll');
         // Active link switching
         $(window).scroll(function() {
@@ -48,7 +48,7 @@ $(function() {
 
         scrollLink.each(function() {
 
-          var sectionOffset = $(this.hash).offset().top - 90;
+          var sectionOffset = $(this.hash).offset().top - 73;
 
           if ( sectionOffset <= scrollbarLocation ) {
             $(this).parent().addClass('active');
@@ -58,11 +58,44 @@ $(function() {
     });
     
     
-    //====== Magnific Popup
     
-    $('.video-popup').magnificPopup({
-        type: 'iframe'
-        // other options
+    // Parallaxmouse js
+    
+    function parallaxMouse() {
+        if ($('#parallax').length) {
+            var scene = document.getElementById('parallax');
+            var parallax = new Parallax(scene);
+        };
+    };
+    parallaxMouse();
+    
+    
+    //===== Progress Bar
+    
+    if($('.progress-line').length){
+        $('.progress-line').appear(function(){
+            var el = $(this);
+            var percent = el.data('width');
+            $(el).css('width',percent+'%');
+        },{accY: 0});
+    }
+    
+    
+    //===== Counter Up
+    
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1600,
+    });
+    
+    
+    //===== Magnific Popup
+    
+    $('.image-popup').magnificPopup({
+      type: 'image',
+      gallery:{
+        enabled:true
+      }
     });
     
     
@@ -87,6 +120,7 @@ $(function() {
         }, 1500);
     });
     
+
     
     //===== 
     
@@ -101,8 +135,4 @@ $(function() {
     
     
     
-    
-    
-    
-    
-});
+}(jQuery));
