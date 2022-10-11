@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html
   lang="{{ str_replace('_', '-', app()->getLocale()) }}"
@@ -213,7 +212,7 @@
                 <li class="nav-item navbar-dropdown dropdown-user dropdown">
                   <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                     <div class="avatar avatar-online">
-                      <img src="../assets/assets/img/avatars/user.png" alt class="w-px-40 h-auto rounded-circle" />
+                      <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-40 h-auto rounded-circle" />
                     </div>
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
@@ -222,7 +221,7 @@
                         <div class="d-flex">
                           <div class="flex-shrink-0 me-3">
                             <div class="avatar avatar-online">
-                              <img src="../assets/assets/img/avatars/user.png" alt class="w-px-40 h-auto rounded-circle" />
+                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-40 h-auto rounded-circle" />
                             </div>
                           </div>
                             <span class="fw-semibold d-block"><!--namauser--></span>
@@ -257,21 +256,21 @@
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="../assets/assets/img/elements/1.JPG" alt="First slide" />
+                        <img class="d-block w-100" src="../assets/assets/img/elements/IMG_2666.JPG" alt="First slide" />
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Eskul Basket</h3>
                           <p>olahraga bola berkelompok yang terdiri atas dua tim beranggotakan masing-masing lima orang yang saling bertanding mencetak poin dengan memasukkan bola ke dalam keranjang lawan.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="../assets/assets/img/elements/2.JPG" alt="Second slide" />
+                        <img class="d-block w-100" src="../assets/assets/img/elements/IMG_3190.JPG" alt="Second slide" />
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Eskul Pramuka</h3>
                           <p>sistem pendidikan kepanduan yang disesuaikan dengan keadaan, kepentingan dan perkembangan masyarakat dan bangsa Indonesia.</p>
                         </div>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="../assets/assets/img/elements/3.JPG" alt="Third slide" />
+                        <img class="d-block w-100" src="../assets/assets/img/elements/IMG_6395.JPG" alt="Third slide" />
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Eskul Padus</h3>
                           <p>istilah untuk menunjukkan ensemble musik yang terdiri dari musik dan penyanyi-penyanyi yang menyanyikan lagu dalam harmoni menggunakan jenis suara yang berbeda-beda.</p>
@@ -371,5 +370,3 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
-=======
->>>>>>> parent of 25877af (mantap)
