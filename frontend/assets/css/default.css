@@ -879,7 +879,7 @@
 /* Background Color */
 
 .gray-bg {
-	background: #fbfbfb;
+	background: #f6f6f6;
 }
 .white-bg {
 	background: #fff;
@@ -909,9 +909,6 @@
 	top: 0;
 	width: 100%;
 	z-index: 1;
-}
-[data-overlay="2"]::before {
-	opacity: 0.2;
 }
 [data-overlay="3"]::before {
 	opacity: 0.3;

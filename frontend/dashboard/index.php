@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html
   lang="{{ str_replace('_', '-', app()->getLocale()) }}"
@@ -370,3 +371,5 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
   </body>
 </html>
+=======
+>>>>>>> parent of 25877af (mantap)

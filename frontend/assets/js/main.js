@@ -1,11 +1,11 @@
-(function($){
+$(function() {
     
     "use strict";
     
     //===== Prealoder
     
     $(window).on('load', function(event) {
-        $('.preloader').delay(500).fadeOut(500);
+        $('#preloader').delay(500).fadeOut(500);
     });
     
     
@@ -29,18 +29,18 @@
     
     //===== Sticky
     
-    $(window).on('scroll', function(event) {    
+    $(window).on('scroll',function(event) {    
         var scroll = $(window).scrollTop();
         if (scroll < 10) {
-            $(".navigation").removeClass("sticky");
-        } else{
-            $(".navigation").addClass("sticky");
+            $(".navgition").removeClass("sticky");
+        }else{
+            $(".navgition").addClass("sticky");
         }
     });
     
     
     //===== Section Menu Active
-
+    
     var scrollLink = $('.page-scroll');
         // Active link switching
         $(window).scroll(function() {
@@ -48,7 +48,7 @@
 
         scrollLink.each(function() {
 
-          var sectionOffset = $(this.hash).offset().top - 73;
+          var sectionOffset = $(this.hash).offset().top - 90;
 
           if ( sectionOffset <= scrollbarLocation ) {
             $(this).parent().addClass('active');
@@ -58,44 +58,11 @@
     });
     
     
+    //====== Magnific Popup
     
-    // Parallaxmouse js
-    
-    function parallaxMouse() {
-        if ($('#parallax').length) {
-            var scene = document.getElementById('parallax');
-            var parallax = new Parallax(scene);
-        };
-    };
-    parallaxMouse();
-    
-    
-    //===== Progress Bar
-    
-    if($('.progress-line').length){
-        $('.progress-line').appear(function(){
-            var el = $(this);
-            var percent = el.data('width');
-            $(el).css('width',percent+'%');
-        },{accY: 0});
-    }
-    
-    
-    //===== Counter Up
-    
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1600,
-    });
-    
-    
-    //===== Magnific Popup
-    
-    $('.image-popup').magnificPopup({
-      type: 'image',
-      gallery:{
-        enabled:true
-      }
+    $('.video-popup').magnificPopup({
+        type: 'iframe'
+        // other options
     });
     
     
@@ -120,7 +87,6 @@
         }, 1500);
     });
     
-
     
     //===== 
     
@@ -135,4 +101,8 @@
     
     
     
-}(jQuery));
+    
+    
+    
+    
+});
