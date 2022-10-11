@@ -248,7 +248,7 @@
           <div class="content-wrapper">
             <!-- Content -->
 
-            <div id="carouselExample" class="carousel slide carousel-fade container-xxl flex-grow-1 container-p-y" data-bs-ride="carousel" style="width:100%;">
+            <div id="carouselExample" class="carousel slide carousel-fade container-xxl flex-grow-1 container-p-y" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                       <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
                       <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
@@ -318,6 +318,7 @@
                   </div>
                 </div>
             <!-- / Content -->
+            
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
