@@ -31,13 +31,13 @@ Felis<br>
 <i>Create Read</i><br>
 
 <h2> Ada 13 Tampilan </h2><br>
-<h3>Landing Page</h3><br>
+<h3>Landing Page (v)</h3><br>
 <h3>Dashboard</h3><br>
-<h3>Login</h3><br>
+<h3>Login (v)</h3><br>
 <h3>Register</h3><br>
 <h3>Form Daftar(create & edit)</h3><br>
-<h3>Form Saran</h3><br>
+<h3>Form Saran</h3><br> 
 <h3>History Saran</h3><br>
-<h3>Form Data Ekskul(create & edit)</h3><br>
+<h3>Form Tambah Data Ekskul(create & edit)</h3><br>
 <h3>Form Data Jadwal(create & edit)</h3><br>
 <h3>Form Data Saran (create)</h3><br>
