@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+if (!isset($_SESSION['hak_akses']) == "Murid") {
+  header("Location: ../../frontend/login/index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
 
