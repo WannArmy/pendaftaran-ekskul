@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['id'])){
+  echo "<script>if(confirm('Anda Sudah Login Ke Website ini, Apakah Anda Ingin Logout?')){ location.href=('../../backend/logout.php'); }else{ location.href=(../dashboard/);</script>";
+};
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,7 +41,7 @@
               <h3>Sign In</h3>
               <p class="mb-4">"Ekspresi wajah seseorarng merupakan cerminan dari kondisi batinnya."<br><span style="float:right;">- - Master Cheng Yen</span></p><br>
             </div>
-            <form action="#" method="post">
+            <form action="../../backend/proses-login.php" method="post">
               <div class="form-group first">
                 <label for="username">Username</label>
                 <input type="text" name="username" class="form-control" id="username">
@@ -55,7 +61,7 @@
                 <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
               </div>
 
-              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
               <br>
               <center>
               <p class="mb-4">Belum Punya akun? <a href="../register/">Register Disini</a></p>
