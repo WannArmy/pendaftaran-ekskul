@@ -3,7 +3,7 @@
 session_start();
 
 if (!isset($_SESSION['hak_akses']) == "Murid") {
-  header("Location: ../../frontend/login/index.php");
+  header("Location: ../../frontend/");
 }
 ?>
 <!DOCTYPE html>
