@@ -253,6 +253,7 @@
                       <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
                       <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
                       <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+                      <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -274,6 +275,13 @@
                         <div class="carousel-caption d-none d-md-block">
                           <h3>Eskul Padus</h3>
                           <p>istilah untuk menunjukkan ensemble musik yang terdiri dari musik dan penyanyi-penyanyi yang menyanyikan lagu dalam harmoni menggunakan jenis suara yang berbeda-beda.</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="../assets/assets/img/elements/ok.jpg" alt="Fourth slide" />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h3>Dan lainnya</h3>
+                          <p>banyak eskul seru lainnya yang bisa kalian coba pengalamannya.</p>
                         </div>
                       </div>
                     </div>
