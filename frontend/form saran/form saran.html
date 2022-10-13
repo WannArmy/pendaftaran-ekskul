@@ -1,82 +1,68 @@
-<html>
-<head>
-<title>FORM</title>
-</head>
-<body text="red">
-<form method="POST" action="Simpan.ASP">
-<table text="white" cellpadding="10" cellspacing="1" width="100%" height="100">
-<tr>
-<td width="80%" colspan="2" align="center" heigth="48" bgcolor="blue">
-<font face="Microsoft San Serif" size="5" color="yellow">Form Saran</font></td>
-</tr>
-
-<tr>
-    <td width="23%" heigth="19" bgcolor="yellow">Nama Lengkap</td>
-    <td width="77%" heigth="19" bgcolor="yellow">
-    <input type="text" name="textnama" size="50"></td>
-  </tr>
-
-  <tr>
-    <td width="23%" heigth="19" bgcolor="yellow">Kelas</td>
-    <td width="77%" heigth="19" bgcolor="yellow">
-      <select name='kelas'>
-        <option value='X'>X</option>
-        <option value='XI'>XI</option>
-        <option value='XII'>XII</option>
-        </select>
-        </tr>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+    <title>Contact Form</title>
+  </head>
+  <body>
+     
+ 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+  <nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Form Saran</a>
+  </nav>
+  
+    <div class="col">
+      <form method="post" action="#">
+         
+        <div class="form-group">
+          <label for="">Nama Lengkap</label>
+          <input type="text" class="form-control" name="nama">
+        </div>
   
         <tr>
-<td width="23%" height="19" bgcolor="yellow">Ekstrakurikuler</td>
-<td width="33%" height="19" bgcolor="yellow">
-<input type="checkbox" name="c1" value="ON">Basket
-<input type="checkbox" name="c2" value="ON">Futsal</td>
-</tr>
+          <td>Kelas</td>
+            <select name='kelas'>
+              <option value='X'>X</option>
+              <option value='XI'>XI</option>
+              <option value='XII'>XII</option>
+              </select>
+              </tr>
 
-<tr>
-<td width="23%" height="19" bgcolor="yellow"></td>
-<td width="77%" height="19" bgcolor="yellow">
-<input type="checkbox" name="c3" value="ON">Jurnalistik
-<input type="checkbox" name="c4" value="ON">Atletik</td>
-</tr>
-
-<tr>
-  <td width="23%" height="19" bgcolor="yellow"></td>
-  <td width="77%" height="19" bgcolor="yellow">
-  <input type="checkbox" name="c3" value="ON">Musik
-  <input type="checkbox" name="c4" value="ON">B.Inggris</td>
-  </tr>
-
-
-  <tr>
-    <td width="23%" height="19" bgcolor="yellow"></td>
-    <td width="77%" height="19" bgcolor="yellow">
-    <input type="checkbox" name="c3" value="ON">Paduan Suara 
-    <input type="checkbox" name="c4" value="ON">Peduli Lingkungan Hidup</td>
-    </tr>
-
-    
-  <tr>
-    <td width="23%" height="19" bgcolor="yellow"></td>
-    <td width="77%" height="19" bgcolor="yellow">
-    <input type="checkbox" name="c4" value="ON">Pramuka</td>
-    </tr>
-
-  <tr>
-<td width="23%" height="16" bgcolor="yellow">Saran</td>
-<td width="77%" height="16" bgcolor="yellow">
-<textarea wrap rows="6" name="S1" cols="60"></textarea></td>
-</tr>
-
-<tr>
-<td width="50" heigth="40" bgcolor="red" colspan="2">
-<p align="left">
-<input type="submit" value="Submit" name="B1">
-<input type="reset" value="Reset" name="B2">
-
-</td>
-</tr>
-</table>
-</form>
-</body> 
+              <div class="form-group">
+                <label>Pilih Ekstrakurikuler</label>
+                <select class="form-control">
+                  <option>Basket</option>
+                  <option>Futsal</option>
+                  <option>Jurnalistik</option>
+                  <option>Atletik</option>
+                 <option>Musik</option>
+                 <option>B.Inggris</option>
+                 <option>Paduan Suara</option>
+                 <option>Peduli Lingkungan Hidup</option>
+                <option>Pramuka</option>
+                </select>
+              </div> 
+            
+        <div class="form-group">
+          <label for="">Saran</label>
+          <textarea name="pesan" class="form-control" cols="30" rows="7"></textarea>
+        </div>
+  
+        <input class="btn btn-primary" type="submit" value="POST">
+  
+      </form>
+    </div>
+  </div>
 </html>
