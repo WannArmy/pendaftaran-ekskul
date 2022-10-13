@@ -40,7 +40,7 @@
                                 <h3>Sign Up</h3>
                                 <p class="mb-4">Silahkan masukkan data diri kamu dibawah ini.</p>
                             </div>
-                            <form action="#" method="post">
+                            <form action="../../backend/register/proses-register.php" method="post">
                                 <div class="form-group first">
                                     <label for="nama">Nama</label>
                                     <input type="text" name="nama" class="form-control" id="nama">
@@ -61,14 +61,7 @@
                                     <input type="password" name="password" class="form-control" id="password">
 
                                 </div>
-                                <div class="form-group last mb-4" hidden>
-                                    <label for="hak_akses">Akses:</label>
-                                    <select id="hak_akses" name="hak_akses">
-                                        <option value="murid">Murid</option>
-                                    </select>
-
-                                </div>
-                                <input type="submit" value="Register" class="btn btn-block btn-primary">
+                                <input type="submit" name="submit" value="Register" class="btn btn-block btn-primary">
                                 <!-- 
               <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>
               

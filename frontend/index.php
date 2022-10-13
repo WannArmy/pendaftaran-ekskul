@@ -284,7 +284,7 @@ session_start();
                                         <li><a href='#'>Register</a></li>";
                                     }
                                     else{
-                                        echo "<li><a href='../../backend/logout.php'>Logout</a></li>";
+                                        echo "<li><a href='../backend/logout.php'>Logout</a></li>";
                                     };
                                     ?>
                             </ul>
