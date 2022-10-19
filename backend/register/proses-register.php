@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include("../../config/koneksi.php");
 
 if (isset($_POST['submit'])) {
@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $username = $_POST['username'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
     $hak_akses = "Murid";
 
     $sql = "INSERT INTO user (nama,email,username,password,hak_akses)
