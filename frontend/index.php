@@ -33,15 +33,6 @@ session_start();
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="canonical" href="https://www.wrappixel.com/templates/Flexy-admin-lite/" />
-
-    <!-- Custom CSS -->
-    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
-
-    <link href="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet" />
 
 </head>
 
@@ -76,12 +67,12 @@ session_start();
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
-                                        <a class='page-scroll' href='#row'>REGISTER</a>
+                                        <a class='page-scroll' href='#contact'>REGISTER</a>
                                     </li>";
                                     }
                                     else{
                                         echo "<li class='nav-item'>
-                                        <a class='page-scroll' href='#row'>".$_SESSION['username']."</a>
+                                        <a class='page-scroll' href='#'>".$_SESSION['username']."</a>
                                         </li>";
                                     };
                                     ?>
@@ -106,7 +97,7 @@ session_start();
                             <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li><a class='main-btn btn-one' href='login/'>Login</a></li>
-                                        <li><a class='main-btn btn-two' href='register/'>Register</i></a></li>";
+                                        <li><a class='main-btn btn-two' href='#'>Register</i></a></li>";
                                     }
                                     else{
                                         echo "<li><a class='main-btn btn-one' href='#'>Ayo Lihat Daftar Ekskul</a></li>";
@@ -216,7 +207,7 @@ session_start();
                     <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
-                                        <a href="register/" class="main-btn">Register</a>
+                                        <a href="#" class="main-btn">Register</a>
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
@@ -248,7 +239,6 @@ session_start();
                                     };
                                     ?>
         </div> <!-- conteiner -->
-        
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
@@ -275,7 +265,7 @@ session_start();
                         </div> <!-- footer logo support -->
                     </div>
                 </div> <!-- row -->
-                <div class="row" id="row">
+                <div class="row">
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="footer-link">
                             <h6 class="footer-title">Ekstrakurikuler</h6>
@@ -291,7 +281,7 @@ session_start();
                             <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li><a href='login/'>Login</a></li>
-                                        <li><a href='register/'>Register</a></li>";
+                                        <li><a href='#'>Register</a></li>";
                                     }
                                     else{
                                         echo "<li><a href='../backend/logout.php'>Logout</a></li>";
@@ -333,7 +323,7 @@ session_start();
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+
 </body>
 
 </html>

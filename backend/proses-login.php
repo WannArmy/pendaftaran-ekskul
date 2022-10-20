@@ -16,9 +16,9 @@ if($check > 0){
     $_SESSION['id']=$id;
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
-    $_SESSION['hak_akses']=$hak;
+    $_SESSION['hak-akses']=$hak;
 
-    if($_SESSION['hak_akses'] == 'Murid'){
+    if($hak == 'Murid'){
         echo "<script>location.href=('../frontend/')</script>";
     }
     else{
@@ -26,6 +26,6 @@ if($check > 0){
     }
 }
 else{
-    echo "<script>alert('Login Gagal, Silahkan Coba Lagi'); location.href=('../frontend/login/');</script>";
+    echo "<script>alert('Login Gagal, Silahkan Coba Lagi'); location.href('../frontend/login/');</script>";
 }
 ?>
