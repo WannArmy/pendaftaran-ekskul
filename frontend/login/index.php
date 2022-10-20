@@ -1,8 +1,7 @@
 <?php
 session_start();
-if(isset($_SESSION['id'])){
-  echo "<script>if(confirm('Anda Sudah Login Ke Website ini, Apakah Anda Ingin Logout?')){ location.href=('../../backend/logout.php'); }else{ location.href=(../dashboard/);</script>";
-};
+if(!isset($_SESSION['id'])){
+  // echo "<script>if(confirm('Anda Sudah Login Ke Website ini, Apakah Anda Ingin Logout?')){ location.href=('../../backend/logout.php'); }else{ location.href=('../dashboard/');</script>";
 ?>
 <!doctype html>
 <html lang="en">
@@ -22,17 +21,16 @@ if(isset($_SESSION['id'])){
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Login</title>
+    <title>Login<?php echo $_SESSION['id'];  ?></title>
   </head>
   <body>
   
 
-  
   <div class="content">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+          <img src="images/ekskul.png" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">
@@ -97,3 +95,13 @@ if(isset($_SESSION['id'])){
     <script src="js/main.js"></script>
   </body>
 </html>
+<?php
+}
+else{
+  if($_SESSION['hak_akses'] == "Murid"){
+echo "<script>location.href=('../../')</script>";
+}
+else{
+  echo "<script>location.href=('../dashboard/')</script>";
+}
+};
