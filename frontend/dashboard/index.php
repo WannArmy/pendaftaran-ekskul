@@ -252,6 +252,33 @@
                           <p>banyak eskul seru lainnya yang bisa kalian coba pengalamannya.</p>
                         </div>
                       </div>
+            <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExample" role="button" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="container-xxl flex-grow-1 container-p-y ">
+          <div class="row">
+            <div class="col-lg-14 mb-4 order-0">
+              <div class="card">
+                <div class="d-flex align-items-end row">
+                  <div class="col-sm-7 ">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">Welcome!
+                        <!--namauser-->🎉✨
+                      </h5>
+                      <p class="mb-4">
+                        Ekstrakurikuler adalah kegiatan pengembangan karakter dalam rangka perluasan potensi, bakat, minat,
+                        kemampuan, kepribadian, kerja sama, dan kemandirian peserta didik. Diharapkan siswa Cinta Kasih Tzu Chi dapat
+                        memilih ekstrakurikuler sesuai bidang.
+                      </p>
+
                     </div>
                   </div>
                   <div class="col-sm-5 text-center text-sm-left">
