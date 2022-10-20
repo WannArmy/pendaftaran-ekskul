@@ -2,7 +2,7 @@
 
 session_start();
 
-if (!isset($_SESSION['hak_akses']) == "Murid") {
+if ($_SESSION['hak_akses'] == "Murid") {
   header("Location: ../../frontend/");
 }
 ?>
@@ -91,7 +91,7 @@ if (!isset($_SESSION['hak_akses']) == "Murid") {
               </g>
               </img>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">eskul</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Eskul</span>
           </a>
 
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -208,9 +208,7 @@ if (!isset($_SESSION['hak_akses']) == "Murid") {
                     <div class="dropdown-divider"></div>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#" onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();">
-                      <i class="bx bx-power-off me-2"></i>
+                    <a class="dropdown-item" href="../../backend/logout.php">
                       <span class="align-middle">Log Out</span>
                     </a>
                   </li>
