@@ -32,7 +32,7 @@ if(isset($_SESSION['id'])){
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img src="images/undraw_remotely_2j6y.svg" alt="Image" class="img-fluid">
+          <img src="images/ekskul.png" alt="Image" class="img-fluid">
         </div>
         <div class="col-md-6 contents">
           <div class="row justify-content-center">

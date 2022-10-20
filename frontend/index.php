@@ -207,7 +207,7 @@ session_start();
                     <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
-                                        <a href="#" class="main-btn">Register</a>
+                                        <a href="register/" class="main-btn">Register</a>
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
