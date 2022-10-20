@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 include("../../config/koneksi.php");
 
 if (isset($_POST['submit'])) {
@@ -15,10 +15,9 @@ if (isset($_POST['submit'])) {
     $query = mysqli_query($db, $sql);
 
     if ($query) {
-        echo "<script>alert('Register Berhasil, Silahkan Login Kembali')</script>";
-        header('Location: ../../frontend/login/index.php');
+        header('Location: ../../frontend/register/index.php');
     } else {
-        header('Location: ../../frontend/login/index.php');
+        header('Location: ../../frontend/register/index.php');
         $_SESSION['pesan'] = "Gagal register X";
     }
 }
