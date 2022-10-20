@@ -132,7 +132,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
 
             <ul class="">
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
+                <a href="ekskul/data-ekskul/index.html" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Eskul</div>
                 </a>
               </li>
