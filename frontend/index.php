@@ -33,15 +33,6 @@ session_start();
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
 
-    <link rel="canonical" href="https://www.wrappixel.com/templates/Flexy-admin-lite/" />
-
-    <!-- Custom CSS -->
-    <link href="assets/libs/chartist/dist/chartist.min.css" rel="stylesheet" />
-
-    <link href="assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.css" rel="stylesheet" />
-
-    <!-- Custom CSS -->
-    <link href="dist/css/style.min.css" rel="stylesheet" />
 
 </head>
 
@@ -248,7 +239,6 @@ session_start();
                                     };
                                     ?>
         </div> <!-- conteiner -->
-        
     </section>
 
     <!--====== CONTACT PART ENDS ======-->
@@ -333,7 +323,7 @@ session_start();
 
     <!--====== Main js ======-->
     <script src="assets/js/main.js"></script>
-    
+
 </body>
 
 </html>
