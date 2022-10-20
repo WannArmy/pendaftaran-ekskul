@@ -1,7 +1,6 @@
 <?php
 
 session_start();
-
 if ($_SESSION['hak_akses'] == "Murid") {
   header("Location: ../../frontend/");
 }

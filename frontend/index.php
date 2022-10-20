@@ -67,12 +67,12 @@ session_start();
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
-                                        <a class='page-scroll' href='#contact'>REGISTER</a>
+                                        <a class='page-scroll' href='#row'>REGISTER</a>
                                     </li>";
                                     }
                                     else{
                                         echo "<li class='nav-item'>
-                                        <a class='page-scroll' href='#'>".$_SESSION['username']."</a>
+                                        <a class='page-scroll' href='#row'>".$_SESSION['username']."</a>
                                         </li>";
                                     };
                                     ?>
@@ -265,7 +265,7 @@ session_start();
                         </div> <!-- footer logo support -->
                     </div>
                 </div> <!-- row -->
-                <div class="row">
+                <div class="row" id="row">
                     <div class="col-lg-2 col-md-4 col-sm-6">
                         <div class="footer-link">
                             <h6 class="footer-title">Ekstrakurikuler</h6>

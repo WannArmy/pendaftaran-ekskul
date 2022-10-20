@@ -16,9 +16,9 @@ if($check > 0){
     $_SESSION['id']=$id;
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
-    $_SESSION['hak-akses']=$hak;
+    $_SESSION['hak_akses']=$hak;
 
-    if($_SESSION['hak-akses'] == 'Murid'){
+    if($_SESSION['hak_akses'] == 'Murid'){
         echo "<script>location.href=('../frontend/')</script>";
     }
     else{
