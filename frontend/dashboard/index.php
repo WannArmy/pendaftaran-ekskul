@@ -1,3 +1,9 @@
+<?php
+session_start();
+if($_SESSION['hak_akses'] == "Murid"){
+  echo "<script>location.href=('../')</script>";
+}
+?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
 
