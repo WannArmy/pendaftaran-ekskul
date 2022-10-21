@@ -83,7 +83,7 @@
               </g>
               </img>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">eskul</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">ekskul</span>
           </a>
 
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -220,27 +220,35 @@
               <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
               <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
               <li data-bs-target="#carouselExample" data-bs-slide-to="2"></li>
+              <li data-bs-target="#carouselExample" data-bs-slide-to="3"></li>
             </ol>
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_2666.JPG" alt="First slide" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Eskul Basket</h3>
+                  <h3>Ekskul Basket</h3>
                   <p>olahraga bola berkelompok yang terdiri atas dua tim beranggotakan masing-masing lima orang yang saling bertanding mencetak poin dengan memasukkan bola ke dalam keranjang lawan.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_3190.JPG" alt="Second slide" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Eskul Pramuka</h3>
+                  <h3>Ekskul Pramuka</h3>
                   <p>sistem pendidikan kepanduan yang disesuaikan dengan keadaan, kepentingan dan perkembangan masyarakat dan bangsa Indonesia.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_6395.JPG" alt="Third slide" />
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Eskul Padus</h3>
+                  <h3>Ekskul Padus</h3>
                   <p>istilah untuk menunjukkan ensemble musik yang terdiri dari musik dan penyanyi-penyanyi yang menyanyikan lagu dalam harmoni menggunakan jenis suara yang berbeda-beda.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="../assets/assets/img/elements/IMG_2986.jpg" alt="Third slide" />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>Dan lainnya</h3>
+                  <p>Masih banyak ekstrakulikuler lainnya yang bisa di coba sesuai bidang yang kalian minati</p>
                 </div>
               </div>
             </div>
@@ -262,7 +270,7 @@
                 <div class="d-flex align-items-end row">
                   <div class="col-sm-7 ">
                     <div class="card-body">
-                      <h5 class="card-title text-primary">Welcome!
+                      <h5 class="card-title text-primary">Selamat Datang!
                         <!--namauser-->🎉✨
                       </h5>
                       <p class="mb-4">
@@ -287,12 +295,12 @@
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                 <div class="mb-2 mb-md-0">
-                  ©
+                  © Cinta Kasih Tzu Chi
                   <script>
                     document.write(new Date().getFullYear());
                   </script>
                   , made with ❤️ by
-                  <a href="#" target="_blank" class="footer-link fw-bolder">RPL 1</a>
+                  <a href="#" target="_blank" class="footer-link fw-bolder">XII RPL 1</a>
                 </div>
               </div>
             </footer>
