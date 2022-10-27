@@ -59,15 +59,19 @@ session_start();
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
                                 <ul class="navbar-nav m-auto">
                                     <li class="nav-item active">
-                                        <a class="page-scroll" href="#home">HOME</a>
+                                        <a class="page-scroll" href="#home">BERANDA</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#service">ABOUT</a>
+                                        <a class="page-scroll" href="#service">TENTANG</a>
                                     </li>
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
+<<<<<<< Updated upstream
                                         <a class='page-scroll' href='#row'>REGISTER</a>
+=======
+                                        <a class='page-scroll' href='#contact'>DAFTAR</a>
+>>>>>>> Stashed changes
                                     </li>";
                                     }
                                     else{
@@ -96,8 +100,8 @@ session_start();
                             <ul class="header-btn">
                             <?php
                                     if(!isset($_SESSION['username'])){
-                                        echo "<li><a class='main-btn btn-one' href='login/'>Login</a></li>
-                                        <li><a class='main-btn btn-two' href='#'>Register</i></a></li>";
+                                        echo "<li><a class='main-btn btn-one' href='login/'>Masuk</a></li>
+                                        <li><a class='main-btn btn-two' href='#'>Daftar</i></a></li>";
                                     }
                                     else{
                                         echo "<li><a class='main-btn btn-one' href='#'>Ayo Lihat Daftar Ekskul</a></li>";
@@ -207,7 +211,11 @@ session_start();
                     <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
+<<<<<<< Updated upstream
                                         <a href="#home" class="main-btn">Register</a>
+=======
+                                        <a href="#" class="main-btn">Daftar</a>
+>>>>>>> Stashed changes
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
@@ -270,7 +278,7 @@ session_start();
                         <div class="footer-link">
                             <h6 class="footer-title">Ekstrakurikuler</h6>
                             <ul>
-                                <li><a href="#service">About</a></li>
+                                <li><a href="#service">Tentang</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>
@@ -280,8 +288,13 @@ session_start();
                             <ul>
                             <?php
                                     if(!isset($_SESSION['username'])){
+<<<<<<< Updated upstream
                                         echo "<li><a href='login/'>Login</a></li>
                                         <li><a href='register/'>Register</a></li>";
+=======
+                                        echo "<li><a href='login/'>Masuk</a></li>
+                                        <li><a href='#'>Daftar</a></li>";
+>>>>>>> Stashed changes
                                     }
                                     else{
                                         echo "<li><a href='../backend/logout.php'>Logout</a></li>";

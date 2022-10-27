@@ -197,7 +197,16 @@ if($_SESSION['hak_akses'] == "Murid"){
                           </div>
                         </div>
                         <span class="fw-semibold d-block">
-                          <!--namauser-->
+                          
+                        <?php
+                                    if(!isset($_SESSION['username'])){
+                                        echo "";
+                                    }
+                                    else{
+                                        echo $_SESSION['username'];
+                                    };
+                                    ?>
+
                         </span>
                       </div>
                     </a>
@@ -208,6 +217,7 @@ if($_SESSION['hak_akses'] == "Murid"){
                   <li>
                     <a class="dropdown-item" href="../../backend/logout.php">
                       <i class="bx bx-power-off me-2"></i>
+
                       <span class="align-middle">Log Out</span>
                     </a>
                   </li>
