@@ -89,7 +89,7 @@ if($_SESSION['hak_akses'] == "Murid"){
               </g>
               </img>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">ekskul</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Ekskul</span>
           </a>
 
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -131,8 +131,8 @@ if($_SESSION['hak_akses'] == "Murid"){
 
             <ul class="">
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
-                  <div data-i18n="Without menu">Eskul</div>
+                <a href="ekskul/data_ekskul.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
+                  <div data-i18n="Without menu">Ekskul</div>
                 </a>
               </li>
               <li class="menu-item">
