@@ -102,7 +102,7 @@ if($_SESSION['hak_akses'] == "Murid"){
         <ul class="menu-inner py-1">
           <!-- Dashboard -->
           <li class="menu-item active">
-            <a href="#" class="menu-link">
+            <a href="/" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Analytics">Dashboard</div>
             </a>
@@ -117,7 +117,7 @@ if($_SESSION['hak_akses'] == "Murid"){
 
             <ul class="">
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
+                <a href="user/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Data User</div>
                 </a>
               </li>
@@ -131,17 +131,17 @@ if($_SESSION['hak_akses'] == "Murid"){
 
             <ul class="">
               <li class="menu-item">
-                <a href="ekskul/data_ekskul.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
+                <a href="ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Ekskul</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
+                <a href="jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Jadwal</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
+                <a href="saran/index.php" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without navbar">Saran</div>
                 </a>
               </li>
