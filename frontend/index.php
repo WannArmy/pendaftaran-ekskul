@@ -67,11 +67,8 @@ session_start();
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
-<<<<<<< Updated upstream
-                                        <a class='page-scroll' href='#row'>REGISTER</a>
-=======
-                                        <a class='page-scroll' href='#contact'>DAFTAR</a>
->>>>>>> Stashed changes
+                                        <a class='page-scroll' href='#row'>DAFTAR</a>
+
                                     </li>";
                                     }
                                     else{
@@ -211,11 +208,7 @@ session_start();
                     <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
-<<<<<<< Updated upstream
-                                        <a href="#home" class="main-btn">Register</a>
-=======
-                                        <a href="#" class="main-btn">Daftar</a>
->>>>>>> Stashed changes
+                                        <a href="#home" class="main-btn">Daftar</a>
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
@@ -236,7 +229,7 @@ session_start();
                                         <div class="contact-form">
                                                     <div class="col-md-12">
                                                         <div class="single-form form-group text-center">
-                                                            <a href=#home" class="main-btn">Daftar</a>
+                                                            <a href="#home" class="main-btn">Daftar</a>
                                                         </div> <!-- single form -->
                                                     </div>
                                                 </div> <!-- row -->
@@ -288,13 +281,8 @@ session_start();
                             <ul>
                             <?php
                                     if(!isset($_SESSION['username'])){
-<<<<<<< Updated upstream
-                                        echo "<li><a href='login/'>Login</a></li>
-                                        <li><a href='register/'>Register</a></li>";
-=======
                                         echo "<li><a href='login/'>Masuk</a></li>
-                                        <li><a href='#'>Daftar</a></li>";
->>>>>>> Stashed changes
+                                        <li><a href='register/'>Daftar</a></li>";
                                     }
                                     else{
                                         echo "<li><a href='../backend/logout.php'>Logout</a></li>";
