@@ -100,10 +100,10 @@ session_start();
                                 <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li><a class='main-btn btn-one' href='login/'>Masuk</a></li>
-                                        <li><a class='main-btn btn-two' href='#'>Daftar</i></a></li>";
+                                        <li><a class='main-btn btn-two' href='register/'>Daftar</i></a></li>";
                                     }
                                     else{
-                                        echo "<li><a class='main-btn btn-one' href='#'>Ayo Lihat Daftar Ekskul</a></li>";
+                                        echo "<li><a class='main-btn btn-one page-scroll' href='#service'>Ayo Lihat Daftar Ekskul</a></li>";
                                     };
                                     ?>
                             </ul>
@@ -126,7 +126,7 @@ session_start();
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-title pb-10">
-                        <h4 class="title">Bidang Ekstrakurikuler</h4>
+                        <h4 class="title">Daftar Ekstrakurikuler</h4>
                         <p class="text">SMK Cinta Kasih Tzu Chi menyediakan beberapa ekstrakurikuler yang seru dan gokil
                             dimana semuanya mengedukasi kita semua!</p>
                     </div> <!-- section title -->
@@ -197,7 +197,7 @@ session_start();
                             <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
-                                        <a href="#home" class="main-btn">Daftar</a>
+                                        <a href="#home" class="main-btn page-scroll">Daftar</a>
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
@@ -219,7 +219,7 @@ session_start();
                 <div class="contact-form">
                     <div class="col-md-12">
                         <div class="single-form form-group text-center">
-                            <a href="#home" class="main-btn">Daftar</a>
+                            <a href="#service" class="main-btn page-scroll">Daftar</a>
                         </div> <!-- single form -->
                     </div>
                 </div> <!-- row -->
@@ -264,7 +264,7 @@ session_start();
                         <div class="footer-link">
                             <h6 class="footer-title">Ekstrakurikuler</h6>
                             <ul>
-                                <li><a href="#service">Tentang</a></li>
+                                <li><a href="#service" class="page-scroll">Daftar Ekskul</a></li>
                             </ul>
                         </div> <!-- footer link -->
                     </div>

@@ -11,7 +11,7 @@ include '../luar.php';
         <div class="card-header" style="border-bottom:black solid 1px;">Data Ekskul<br>
         </div>
         <div class="card-body" style="margin-top:1em;">
-          <span class="float-right" style="margin-left:49em;"><a href="#">
+          <span class="float-right" style="float:right;"><a href="tambah.php">
               <button class="btn btn-outline-success">Tambah Ekskul</button>
             </a>
           </span>
