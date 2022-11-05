@@ -117,7 +117,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
 
                         <ul class="">
                             <li class="menu-item">
-                                <a href="user/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
+                                <a href="../user/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without menu">Data User</div>
                                 </a>
                             </li>
@@ -131,17 +131,17 @@ if ($_SESSION['hak_akses'] == "Murid") {
 
                         <ul class="">
                             <li class="menu-item">
-                                <a href="ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
+                                <a href="../ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without menu">Ekskul</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
+                                <a href="../jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without menu">Jadwal</div>
                                 </a>
                             </li>
                             <li class="menu-item">
-                                <a href="saran/index.php" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
+                                <a href="../saran/index.php" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without navbar">Saran</div>
                                 </a>
                             </li>
