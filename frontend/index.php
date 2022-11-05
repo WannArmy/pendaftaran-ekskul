@@ -60,7 +60,19 @@ session_start();
 
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
                                 <ul class="navbar-nav m-auto">
-                                    <li class="nav-item active">
+                                    <?php
+                                    if($_SESSION['hak_akses'] == "Murid"){
+
+                                    }
+                                    else{
+                                    ?>
+                                                                    <li class="nav-item">
+                                        <a class="page-scroll" href="dashboard/">Admin</a>
+                                    </li>
+                                    <?php
+                                    }
+                                    ?>
+                                    <li class="nav-item">
                                         <a class="page-scroll" href="#home">BERANDA</a>
                                     </li>
                                     <li class="nav-item">
@@ -134,48 +146,34 @@ session_start();
             </div> <!-- row -->
 
             <!-- flipcard -->
-
             <div class="scene">
+            <?php
+include '../config/koneksi.php';
+$query = mysqli_query($db, "SELECT * FROM list_ekskul");
+if(mysqli_num_rows($query) > 0){
+while($row = mysqli_fetch_array($query)){
+?>
+
                 <label class="card-wrap">
                     <input type="checkbox" class="flipcard">
                     <div class="card">
                         <div class="front card-face">
-                            <h2>Pramuka</h2>
-                            <img src="assets/images/logo-cktc.png" class="card-photo" alt="Logo">
+                            <h2><?= $row['judul'] ?></h2>
+                            <img src="assets/images/tmp/<?= $row['gambar'] ?>" class="card-photo" alt="Tidak Ada Gambar">
                         </div>
                         <div class="back card-face">
-                            <p>Pramuka adalah singkatan dari Praja Muda Karana dan merupakan organisasi atau gerakan
-                                kepanduan.</p>
+                            <p><?= $row['keterangan'] ?></p>
+                            <br>
+                            Guru: <?= $row['guru'] ?>
                         </div>
                     </div>
                 </label>
-                <label class="card-wrap">
-                    <input type="checkbox" class="flipcard">
-                    <div class="card">
-                        <div class="front card-face">
-                            <h2>IT</h2>
-                            <img src="assets/images/logo-cktc.png" class="card-photo" alt="Logo">
+
+            <?php
+}
+}
+            ?>
                         </div>
-                        <div class="back card-face">
-                            <p>Teknologi Informasi (TI), atau dalam bahasa Inggris dikenal dengan istilah Information
-                                technology (IT)</p>
-                        </div>
-                    </div>
-                </label>
-                <label class="card-wrap">
-                    <input type="checkbox" class="flipcard">
-                    <div class="card">
-                        <div class="front card-face">
-                            <h2>Musik</h2>
-                            <img src="assets/images/logo-cktc.png" class="card-photo" alt="Logo">
-                        </div>
-                        <div class="back card-face">
-                            <p>Musik adalah karya cipta berupa bunyi atau suara yang memiliki nada, irama dan
-                                keselarasan.</p>
-                        </div>
-                    </div>
-                </label>
-            </div>
             <section id="contact" class="contact-area">
                 <div class="container">
                     <div class="row justify-content-center">

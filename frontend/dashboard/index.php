@@ -107,7 +107,10 @@ if ($_SESSION['hak_akses'] == "Murid") {
               <div data-i18n="Analytics">Dashboard</div>
             </a>
           </li>
-
+          <?php
+          include '../../config/koneksi.php';
+          if($_SESSION['hak_akses'] == "Admin"){
+          ?>
           <!-- Layouts -->
           <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
@@ -123,6 +126,9 @@ if ($_SESSION['hak_akses'] == "Murid") {
               </li>
             </ul>
 
+            <?php
+          }
+            ?>
           <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -175,8 +181,9 @@ if ($_SESSION['hak_akses'] == "Murid") {
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
-                <a href="">
-                  <!--namauser-->
+                <a href="../"><span class="fw-semibold d-block">
+                  Halaman User
+                  </span>
                 </a>
               </li>
 

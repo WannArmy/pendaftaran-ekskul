@@ -652,8 +652,8 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.625rem;
-  --bs-gutter-y: 0;
+  /* --bs-gutter-x: 1.625rem;
+  --bs-gutter-y: 0; */
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));
@@ -5778,11 +5778,11 @@ strong {
 }
 
 a:not([href]) {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 a:not([href]):hover {
-  color: inherit;
+  /* color: inherit; */
   text-decoration: none;
 }
 

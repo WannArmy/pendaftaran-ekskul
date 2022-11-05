@@ -3,6 +3,7 @@ session_start();
 if ($_SESSION['hak_akses'] == "Murid") {
     echo "<script>location.href=('../../')</script>";
 }
+include '../../../config/koneksi.php';
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../../assets/" data-template="vertical-menu-template-free">
@@ -212,7 +213,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
                                         <div class="dropdown-divider"></div>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="../../../../backend/logout.php">
+                                        <a class="dropdown-item" href="../../../backend/logout.php">
                                             <i class="bx bx-power-off me-2"></i>
 
                                             <span class="align-middle">Log Out</span>

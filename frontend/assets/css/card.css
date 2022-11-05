@@ -18,8 +18,8 @@
   }
   
   .card-wrap {
-    display: block;
-    width: 100%;
+    display: inline-block;
+    width: 30%;
     max-width: 100%;
     height: 400px;
     margin: 0 1em;
@@ -50,7 +50,7 @@
   }
   
   .card-photo {
-    object-fit: none;
+    /* object-fit: none; */
     border-radius: 10px;
   }
   
@@ -79,7 +79,11 @@
   
   .front h2 {
     margin: 0;
+    padding:1em;
+    opacity: 90%;
+    border-radius: 1em;
     position: absolute;
+    background-color: white;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);   
@@ -95,7 +99,7 @@
   
   @media screen and (min-width: 960px) {
     .scene {
-      display: flex;
+      /* display: flex; */
       justify-content: space-around;
     }
   }

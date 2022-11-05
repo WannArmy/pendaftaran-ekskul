@@ -1,95 +1,86 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+<?php include "../luar.php" ?>
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+<div class="row">
+    <div class="card col-11" style="margin-left:3em;margin-top:1em;">
+        <div class="d-flex align-items-end">
+            <div class="col-12">
+                <div class="card-header">
+                    <h2>Tambah Ekskul</h2>
+                </div>
+                <div class="card-body">
+                    <form method="post" action="../../../backend/ekskul/tambah.php" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="">Nama Ekskul</label>
+                            <input type="text" class="form-control" name="judul" maxlength=25 required>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Keterangan Ekskul</label>
+                            <input type="text" class="form-control" name="keterangan" maxlength=255>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Nama Guru</label>
+                            <?php
+              if($_SESSION['hak_akses'] == "Guru"){
+              ?>
 
+                        <input type="text" class="form-control" name="guru" value="<?php 
+              $username = $_SESSION['username'];
+              $query = mysqli_query($db, "SELECT * FROM user WHERE username='$username'");
+              while($row = mysqli_fetch_array($query)){
+                echo $row['nama'];
+              }
+               ?>
+              " readonly required>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Tambah Data Ekskul</title>
-  </head>
-  <body>
-  
-
-  <div class="content">
-    
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-10">
-          
-
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              
-              <h3 class="heading mb-4">Tambah Data Ekskul</h3>
-              <p>Silakan tambah data ekskul!!</p>
-
-              <p><img src="images/Pramuka.JPG" height="500" alt="Image" class="img-fluid"></p>
-
-
+                        <?php
+              }
+              else{
+                ?>
+                        <select class="form-select" name="guru" id="" required>
+                          <?php
+                  $query = mysqli_query($db, "SELECT * FROM user WHERE hak_akses='guru'");
+                  while($row = mysqli_fetch_array($query)){
+                    ?>
+                          <option value="<?= $row['nama'] ?>"><?= $row['nama'] ?></option>
+                          <?php
+                  }
+                  ?>
+                        </select>
+                        <?php
+              }
+              ?>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Hari</label>
+                            <select name="hari" class="form-select" id="" required>
+                          <option value="senin">Senin</option>
+                          <option value="selasa">Selasa</option>
+                          <option value="rabu">Rabu</option>
+                          <option value="kamis">Kamis</option>
+                          <option value="jumat">Jumat</option>
+                          <option value="sabtu">Sabtu</option>
+                          <option value="minggu">Minggu</option>
+                        </select>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Jam</label>
+                            <input type="time" class="form-control" name="jam" reuqired>
+                        </div>
+                        <br>
+                        <div class="form-group">
+                            <label for="">Gambar <sub>Tidak bisa diedit</sub></label>
+                            <input type="file" class="form-control" name="gambar" required>
+                        </div>
+                        <br>
+                        <input class="btn btn-primary" type="submit" name="submit" value="Submit">
+                    </form>
+                </div>
             </div>
-            <div class="col-md-6">
-              
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <br>
-              <form class="mb-5" method="post" id="contactForm" name="contactForm">
-                <div class="row">
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="Nama Ekskul">
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Guru Pembimbing">
-                  </div>
-                </div>
-                <div class="row">
-                  
-                </div>  
-                <div class="row">
-                  <div class="col-12">
-                    <input type="submit" value="Submit" class="btn btn-primary rounded-0 py-2 px-4">
-                  <span class="submitting"></span>
-                  <input type="submit" value="Edit" class="btn btn-primary rounded-0 py-2 px-4">
-                  <span class="submitting"></span>
-                  </div>
-                </div>
-              </form>
-
-              <div id="form-message-warning mt-4"></div> 
-              <div id="form-message-success">
-                Tambah Ekskul Berhasil!
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-
-  </div>
-    
-    
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/main.js"></script>
-
-  </body>
-</html>
+</div>
+<?php include "../footer.php" ?>
