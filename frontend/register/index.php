@@ -52,6 +52,11 @@
 
                                 </div>
                                 <div class="form-group first">
+                                    <label for="nohp">No.Hp</label>
+                                    <input type="number" name="nohp" class="form-control" id="nohp">
+
+                                </div>
+                                <div class="form-group first">
                                     <label for="username">Username</label>
                                     <input type="text" name="username" class="form-control" id="username">
 

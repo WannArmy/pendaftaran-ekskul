@@ -1,6 +1,6 @@
 <?php
 session_start();
-if($_SESSION['hak_akses'] == "Murid"){
+if ($_SESSION['hak_akses'] == "Murid") {
   echo "<script>location.href=('../')</script>";
 }
 ?>
@@ -89,7 +89,7 @@ if($_SESSION['hak_akses'] == "Murid"){
               </g>
               </img>
             </span>
-            <span class="app-brand-text demo menu-text fw-bolder ms-2">ekskul</span>
+            <span class="app-brand-text demo menu-text fw-bolder ms-2">Ekskul</span>
           </a>
 
           <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
@@ -107,7 +107,10 @@ if($_SESSION['hak_akses'] == "Murid"){
               <div data-i18n="Analytics">Dashboard</div>
             </a>
           </li>
-
+          <?php
+          include '../../config/koneksi.php';
+          if($_SESSION['hak_akses'] == "Admin"){
+          ?>
           <!-- Layouts -->
           <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
@@ -117,12 +120,15 @@ if($_SESSION['hak_akses'] == "Murid"){
 
             <ul class="">
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
+                <a href="user/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Data User</div>
                 </a>
               </li>
             </ul>
 
+            <?php
+          }
+            ?>
           <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -131,17 +137,17 @@ if($_SESSION['hak_akses'] == "Murid"){
 
             <ul class="">
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
-                  <div data-i18n="Without menu">Eskul</div>
+                <a href="ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
+                  <div data-i18n="Without menu">Ekskul</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
+                <a href="jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without menu">Jadwal</div>
                 </a>
               </li>
               <li class="menu-item">
-                <a href="#" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
+                <a href="saran/index.php" class="menu-link"><i class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
                   <div data-i18n="Without navbar">Saran</div>
                 </a>
               </li>
@@ -175,8 +181,9 @@ if($_SESSION['hak_akses'] == "Murid"){
             <ul class="navbar-nav flex-row align-items-center ms-auto">
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
-                <a href="">
-                  <!--namauser-->
+                <a href="../"><span class="fw-semibold d-block">
+                  Halaman User
+                  </span>
                 </a>
               </li>
 
@@ -197,7 +204,15 @@ if($_SESSION['hak_akses'] == "Murid"){
                           </div>
                         </div>
                         <span class="fw-semibold d-block">
-                          <!--namauser-->
+
+                          <?php
+                          if (!isset($_SESSION['username'])) {
+                            echo "";
+                          } else {
+                            echo $_SESSION['username'];
+                          };
+                          ?>
+
                         </span>
                       </div>
                     </a>
@@ -208,6 +223,7 @@ if($_SESSION['hak_akses'] == "Murid"){
                   <li>
                     <a class="dropdown-item" href="../../backend/logout.php">
                       <i class="bx bx-power-off me-2"></i>
+
                       <span class="align-middle">Log Out</span>
                     </a>
                   </li>
@@ -217,6 +233,7 @@ if($_SESSION['hak_akses'] == "Murid"){
             </ul>
           </div>
         </nav>
+
         <!-- Content wrapper -->
         <div class="content-wrapper">
 
@@ -312,21 +329,24 @@ if($_SESSION['hak_akses'] == "Murid"){
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_2666.JPG" alt="First slide" />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Ekskul Basket</h3>
-                  <p>olahraga bola berkelompok yang terdiri atas dua tim beranggotakan masing-masing lima orang yang saling bertanding mencetak poin dengan memasukkan bola ke dalam keranjang lawan.</p>
+                  <p>olahraga bola berkelompok yang terdiri atas dua tim beranggotakan masing-masing lima orang yang
+                    saling bertanding mencetak poin dengan memasukkan bola ke dalam keranjang lawan.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_3190.JPG" alt="Second slide" />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Ekskul Pramuka</h3>
-                  <p>sistem pendidikan kepanduan yang disesuaikan dengan keadaan, kepentingan dan perkembangan masyarakat dan bangsa Indonesia.</p>
+                  <p>sistem pendidikan kepanduan yang disesuaikan dengan keadaan, kepentingan dan perkembangan
+                    masyarakat dan bangsa Indonesia.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img class="d-block w-100" src="../assets/assets/img/elements/IMG_6395.JPG" alt="Third slide" />
                 <div class="carousel-caption d-none d-md-block">
                   <h3>Ekskul Padus</h3>
-                  <p>istilah untuk menunjukkan ensemble musik yang terdiri dari musik dan penyanyi-penyanyi yang menyanyikan lagu dalam harmoni menggunakan jenis suara yang berbeda-beda.</p>
+                  <p>istilah untuk menunjukkan ensemble musik yang terdiri dari musik dan penyanyi-penyanyi yang
+                    menyanyikan lagu dalam harmoni menggunakan jenis suara yang berbeda-beda.</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -360,8 +380,10 @@ if($_SESSION['hak_akses'] == "Murid"){
                         <!--namauser-->🎉✨
                       </h5>
                       <p class="mb-4">
-                        Ekstrakurikuler adalah kegiatan pengembangan karakter dalam rangka perluasan potensi, bakat, minat,
-                        kemampuan, kepribadian, kerja sama, dan kemandirian peserta didik. Diharapkan siswa Cinta Kasih Tzu Chi dapat
+                        Ekstrakurikuler adalah kegiatan pengembangan karakter dalam rangka perluasan potensi, bakat,
+                        minat,
+                        kemampuan, kepribadian, kerja sama, dan kemandirian peserta didik. Diharapkan siswa Cinta Kasih
+                        Tzu Chi dapat
                         memilih ekstrakurikuler sesuai bidang.
                       </p>
                     </div>
