@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
     $query = mysqli_query($db, $sql);
 
     if ($query) {
-        header('Location: ../../frontend/register/index.php');
+        header('Location: ../../frontend/login/index.php');
     } else {
         header('Location: ../../frontend/register/index.php');
         $_SESSION['pesan'] = "Gagal register X";
