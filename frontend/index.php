@@ -61,6 +61,7 @@ session_start();
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarOne">
                                 <ul class="navbar-nav m-auto">
                                     <?php
+                                    if(isset($_SESSION['hak_akses'])){
                                     if($_SESSION['hak_akses'] == "Murid"){
 
                                     }
@@ -71,6 +72,7 @@ session_start();
                                     </li>
                                     <?php
                                     }
+                                }
                                     ?>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#home">BERANDA</a>
