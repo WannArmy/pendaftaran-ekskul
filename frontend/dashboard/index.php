@@ -219,9 +219,88 @@ if($_SESSION['hak_akses'] == "Murid"){
         </nav>
         <!-- Content wrapper -->
         <div class="content-wrapper">
-          <!-- Content -->
 
-          <div id="carouselExample" class="carousel slide carousel-fade container-xxl flex-grow-1 container-p-y" data-bs-ride="carousel">
+        <div class="row container-xxl container-p-y">
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                                                <i class='bx bxs-user-account'></i>&nbsp&nbsp&nbspJumlah User</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-success shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                                              <i class='bx bxs-group'></i>&nbsp&nbsp&nbspJumlah Ekskul</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-info shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
+                                              <i class='bx bxs-user'></i>&nbsp&nbsp&nbspJumlah pembina
+                                            </div>
+                                            <div class="row no-gutters align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-warning shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                                              <i class='bx bxs-user'></i>&nbsp&nbsp&nbspjumlah murid</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">6</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+          <!-- Content -->
+          <div id="carouselExample" class="carousel slide carousel-fade container-xxl container" data-bs-ride="carousel">
             <ol class="carousel-indicators">
               <li data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></li>
               <li data-bs-target="#carouselExample" data-bs-slide-to="1"></li>
@@ -268,13 +347,14 @@ if($_SESSION['hak_akses'] == "Murid"){
             </a>
           </div>
         </div>
-
+        
         <div class="container-xxl flex-grow-1 container-p-y ">
           <div class="row">
             <div class="col-lg-14 mb-4 order-0">
+              <div class="col-lg-12 col-md-10 col-14 mb-4">
               <div class="card">
                 <div class="d-flex align-items-end row">
-                  <div class="col-sm-7 ">
+                  <div class="col-sm-7">
                     <div class="card-body">
                       <h5 class="card-title text-primary">Selamat Datang!
                         <!--namauser-->🎉✨
@@ -294,8 +374,103 @@ if($_SESSION['hak_akses'] == "Murid"){
                 </div>
               </div>
             </div>
-            <!-- / Content -->
 
+            <div class="divider">
+              <div class="divider-text"><h2>Saran</h2></div>
+            </div>
+
+            <div class="row container-xxl container-p-y">
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="font-weight-bold text-primary text-uppercase">
+                                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-50 h-auto rounded-circle" /></div>
+                                              <div class="mb-0 font text-gray">Yoga</div>
+                                              <br />
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang sedikit, tapi selebihnya bagus."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="font-weight-bold text-primary text-uppercase">
+                                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-50 h-auto rounded-circle" /></div>
+                                              <div class="mb-0 font text-gray">Yoga</div>
+                                              <br />
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang sedikit, tapi selebihnya bagus."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="font-weight-bold text-primary text-uppercase">
+                                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-50 h-auto rounded-circle" /></div>
+                                              <div class="mb-0 font text-gray">Yoga</div>
+                                              <br />
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang sedikit, tapi selebihnya bagus."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="font-weight-bold text-primary text-uppercase">
+                                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-50 h-auto rounded-circle" /></div>
+                                              <div class="mb-0 font text-gray">Yoga</div>
+                                              <br />
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang sedikit, tapi selebihnya bagus."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="font-weight-bold text-primary text-uppercase">
+                                              <img src="../assets/assets/img/avatars/avatar.png" alt class="w-px-50 h-auto rounded-circle" /></div>
+                                              <div class="mb-0 font text-gray">Yoga</div>
+                                              <br />
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang sedikit, tapi selebihnya bagus."</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-8 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <center><a href="halamansaran"><img src="https://cdn-icons-png.flaticon.com/512/262/262038.png" style="width:80px;height:80px;"></a></center>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
             <!-- Footer -->
             <footer class="content-footer footer bg-footer-theme">
