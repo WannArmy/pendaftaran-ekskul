@@ -37,7 +37,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="mb-4">
-                                <h3>Sign Up</h3>
+                                <h3>Daftar</h3>
                                 <p class="mb-4">Silahkan masukkan data diri kamu dibawah ini.</p>
                             </div>
                             <form action="../../backend/register/proses-register.php" method="post">
