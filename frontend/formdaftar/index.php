@@ -52,15 +52,17 @@
                 </div>
                 <div class="row">
                   <div class="col-md-12 form-group" class="form-control">
-                  <input type="radio" name="jenis_lomba" value="musik"> Musik
-                  <input type="radio" name="jenis_lomba" value="pramuka"> Pramuka<br>
-                  <input type="radio" name="jenis_lomba" value="paskibra"> Paskibra
-                  <input type="radio" name="jenis_lomba" value="basket">Basket <br>
-                  <input type="radio" name="jenis_lomba" value="futsal"> Futsal
-                  <input type="radio" name="jenis_lomba" value="plh"> Peduli Lingkungan Hidup<br>
-                  <input type="radio" name="jenis_lomba" value="badmin"> Badminton
-                  <input type="radio" name="jenis_lomba" value="jurnal"> Jurnalistik
-                  <input type="radio" name="jenis_lomba" value="padus"> Paduan Suara</label>
+                    <select name="ekskul" id="" class="form-control">
+                  <option value="musik"> Musik</option>
+                  <option value="pramuka"> Pramuka</option>
+                  <option value="paskibra"> Paskibra</option>
+                  <option value="basket">Basket</option>
+                  <option value="futsal"> Futsal</option>
+                  <option value="plh"> Peduli Lingkungan Hidup</option>
+                  <option value="badmin"> Badminton</option>
+                  <option value="jurnal"> Jurnalistik</option>
+                  <option value="padus"> Paduan Suara</option>
+                  </select>
                 </div>  
                 <div class="row">
                   <div class="col-12">

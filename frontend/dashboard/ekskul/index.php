@@ -16,16 +16,16 @@ include '../luar.php';
             </a>
           </span>
           <div class="table-responsive" style="margin-top:3em;">
-            <table class="table" style="text-align: center;">
-              <thead class="table-primary">
+            <table id="table" class="display">
+              <thead>
                 <tr>
-                  <th scope="col">Ekskul</th>
-                  <th scope="col">Jadwal</th>
-                  <th scope="col">Guru Pembimbing</th>
-                  <th scope="col">Keterangan Ekskul</th>
-                  <th scope="col">Gambar</th>
-                  <th scope="col">Edit</th>
-                  <th scope="col">Delete</th>
+                  <th>Ekskul</th>
+                  <th>Jadwal</th>
+                  <th>Guru Pembimbing</th>
+                  <th>Keterangan Ekskul</th>
+                  <th>Gambar</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
               </thead>
               <tbody>

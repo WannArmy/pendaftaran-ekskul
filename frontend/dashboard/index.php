@@ -1,8 +1,5 @@
 <?php
 session_start();
-if ($_SESSION['hak_akses'] == "Murid") {
-  echo "<script>location.href=('../')</script>";
-}
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
@@ -101,7 +98,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
 
         <ul class="menu-inner py-1">
           <!-- Dashboard -->
-          <li class="menu-item active">
+          <li class="menu-item">
             <a href="#" class="menu-link">
               <i class="menu-icon tf-icons bx bx-home-circle"></i>
               <div data-i18n="Analytics">Dashboard</div>
@@ -109,6 +106,9 @@ if ($_SESSION['hak_akses'] == "Murid") {
           </li>
           <?php
           include '../../config/koneksi.php';
+          if($_SESSION['hak_akses'] == "Murid"){
+          }
+          else{
           if($_SESSION['hak_akses'] == "Admin"){
           ?>
           <!-- Layouts -->
@@ -158,9 +158,9 @@ if ($_SESSION['hak_akses'] == "Murid") {
               </li>
             </ul>
           </li>
-          
-
-
+        <?php
+          }
+        ?>
           <!-- Components -->
       </aside>
       <!-- / Menu -->
@@ -188,7 +188,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
                 <a href="../"><span class="fw-semibold d-block">
-                  Halaman User
+                  Halaman Utama
                   </span>
                 </a>
               </li>
@@ -252,7 +252,16 @@ if ($_SESSION['hak_akses'] == "Murid") {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                                 <i class='bx bxs-user-account'></i>&nbsp&nbsp&nbspJumlah User</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">10</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                              <?php
+                                              $query = mysqli_query($db, "SELECT COUNT('id') as jmlh FROM user");
+                                              if(mysqli_num_rows($query) > 0){
+                                                while($row = mysqli_fetch_array($query)){
+                                                  echo $row['jmlh'];
+                                                }
+                                              }
+                                              ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -270,7 +279,16 @@ if ($_SESSION['hak_akses'] == "Murid") {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                               <i class='bx bxs-group'></i>&nbsp&nbsp&nbspJumlah Ekskul</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">5</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                              $query = mysqli_query($db, "SELECT COUNT('id') as jmlh FROM list_ekskul");
+                                              if(mysqli_num_rows($query) > 0){
+                                                while($row = mysqli_fetch_array($query)){
+                                                  echo $row['jmlh'];
+                                                }
+                                              }
+                                              ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -291,7 +309,16 @@ if ($_SESSION['hak_akses'] == "Murid") {
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">5</div>
+                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
+                                                    <?php
+                                              $query = mysqli_query($db, "SELECT COUNT('id') as jmlh FROM user WHERE hak_akses = 'Guru'");
+                                              if(mysqli_num_rows($query) > 0){
+                                                while($row = mysqli_fetch_array($query)){
+                                                  echo $row['jmlh'];
+                                                }
+                                              }
+                                              ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -311,7 +338,16 @@ if ($_SESSION['hak_akses'] == "Murid") {
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                               <i class='bx bxs-user'></i>&nbsp&nbsp&nbspjumlah murid</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">6</div>
+                                            <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                            <?php
+                                              $query = mysqli_query($db, "SELECT COUNT('id') as jmlh FROM user WHERE hak_akses = 'Murid'");
+                                              if(mysqli_num_rows($query) > 0){
+                                                while($row = mysqli_fetch_array($query)){
+                                                  echo $row['jmlh'];
+                                                }
+                                              }
+                                              ?>
+                                            </div>
                                         </div>
                                         <div class="col-auto">
                                             <i class="fas fa-comments fa-2x text-gray-300"></i>

@@ -1,8 +1,5 @@
 <?php
 session_start();
-if ($_SESSION['hak_akses'] == "Murid") {
-    echo "<script>location.href=('../../')</script>";
-}
 include '../../../config/koneksi.php';
 ?>
 <!DOCTYPE html>
@@ -38,7 +35,9 @@ include '../../../config/koneksi.php';
     <link rel="stylesheet" href="../../assets/assets/vendor/libs/apex-charts/apex-charts.css" />
 
     <!-- Page CSS -->
-
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Helpers -->
     <script src="../../assets/assets/vendor/js/helpers.js"></script>
 
@@ -175,7 +174,7 @@ include '../../../config/koneksi.php';
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
                 <a href="../../"><span class="fw-semibold d-block">
-                  Halaman User
+                  Halaman Utama
                   </span>
                 </a>
               </li>

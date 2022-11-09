@@ -47,5 +47,13 @@
            <!-- Place this tag in your head or just before your close body tag. -->
            <script async defer src="https://buttons.github.io/buttons.js"></script>
            </body>
-
+           <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<script>
+        $(document).ready(function () {
+        $('#table').DataTable({
+            "pagingType": "full_numbers"
+        });
+    });
+</script>
            </html>
