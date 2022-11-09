@@ -160,7 +160,9 @@ include '../../../config/koneksi.php';
                                 </a>
                             </li>
                         </ul>
-
+                        <?php
+                        }
+                        ?>
                     <li class="menu-item">
                         <a href="#" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
@@ -182,7 +184,6 @@ include '../../../config/koneksi.php';
                             </li>
                         </ul>
                         <?php
-          }
         }
             ?>
                     <li class="menu-item">

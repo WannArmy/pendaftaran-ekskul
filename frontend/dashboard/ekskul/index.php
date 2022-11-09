@@ -30,7 +30,13 @@ include '../luar.php';
               </thead>
               <tbody>
 <?php
+if($_SESSION['hak_akses'] == "Admin"){
 $query = mysqli_query($db, "SELECT * FROM list_ekskul");
+}
+else{
+  $nama = $_SESSION['nama'];
+  $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE guru = '$nama'");
+}
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
   ?>

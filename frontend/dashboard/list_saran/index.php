@@ -26,7 +26,13 @@ include '../luar.php';
               </thead>
               <tbody>
 <?php
+if($_SESSION['hak_akses'] == "Admin"){
 $query = mysqli_query($db, "SELECT  s.id, s.nama, s.ekskul, l.guru, l.judul, s.judul, s.isi, s.tanggal FROM saran AS s LEFT JOIN list_ekskul AS l ON s.ekskul = l.judul");
+}
+else{
+    $nama = $_SESSION['nama'];
+    $query = mysqli_query($db, "SELECT  s.id, s.nama, s.ekskul, l.guru, l.judul, s.judul, s.isi, s.tanggal FROM saran AS s LEFT JOIN list_ekskul AS l ON s.ekskul = l.judul WHERE l.guru = '$nama'");
+}
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
   ?>
