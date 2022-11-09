@@ -132,7 +132,7 @@ if ($_SESSION['hak_akses'] == "Murid") {
           <li class="menu-item">
             <a href="#" class="menu-link menu-toggle">
               <i class="menu-icon tf-icons bx bx-detail"></i>
-              <div data-i18n="Layouts">Form</div>
+              <div data-i18n="Layouts">List</div>
             </a>
 
             <ul class="">

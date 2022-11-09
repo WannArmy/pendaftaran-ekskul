@@ -11,7 +11,7 @@
                     <form method="post" action="#">
                         <div class="form-group">
                             <label for="">Nama Lengkap</label>
-                            <input type="text" class="form-control" name="nama">
+                            <input type="text" class="form-control" name="nama" value="<?= $_SESSION['nama'] ?>" readonly>
                         </div>
                         <br>
                         <tr>
@@ -26,16 +26,17 @@
                         <br>
                         <div class="form-group">
                             <label>Pilih Ekstrakurikuler</label>
-                            <select class="form-control">
-                                <option>Musik</option>
-                                <option>Pramuka</option>
-                                <option>Paskibra</option>
-                                <option>Basket</option>
-                                <option>Futsal</option>
-                                <option>Peduli Lingkungan Hidup</option>
-                                <option>Badminton</option>
-                                <option>Jurnalistik</option>
-                                <option>Paduan Suara</option>
+                            <select class="form-control" name="ekskul">
+                                <?php
+                                $query = mysqli_query($db, "SELECT * FROM list_ekskul ORDER BY judul ASC");
+                                if(mysqli_num_rows($query) > 0){
+                                    while($row = mysqli_fetch_array($query)){
+                                ?>
+                                <option value="<?= $row['judul'] ?>"><?= $row['judul'] ?></option>
+                                <?php
+                                    }
+                                }
+                                ?>
                             </select>
                         </div>
                         <br>

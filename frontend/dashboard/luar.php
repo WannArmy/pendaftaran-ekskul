@@ -127,7 +127,7 @@ include '../../../config/koneksi.php';
                     <li class="menu-item">
                         <a href="#" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-detail"></i>
-                            <div data-i18n="Layouts">Form</div>
+                            <div data-i18n="Layouts">List</div>
                         </a>
 
                         <ul class="">
@@ -170,6 +170,15 @@ include '../../../config/koneksi.php';
                             </div>
                         </div>
                         <!-- /Search -->
+
+                        <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <!-- Place this tag where you want the button to render. -->
+              <li class="nav-item lh-1 me-3">
+                <a href="../../"><span class="fw-semibold d-block">
+                  Halaman User
+                  </span>
+                </a>
+              </li>
 
                         <ul class="navbar-nav flex-row align-items-center ms-auto">
                             <!-- Place this tag where you want the button to render. -->
