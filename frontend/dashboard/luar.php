@@ -1,8 +1,5 @@
 <?php
 session_start();
-if ($_SESSION['hak_akses'] == "Murid") {
-    echo "<script>location.href=('../../')</script>";
-}
 include '../../../config/koneksi.php';
 ?>
 <!DOCTYPE html>
@@ -175,7 +172,7 @@ include '../../../config/koneksi.php';
               <!-- Place this tag where you want the button to render. -->
               <li class="nav-item lh-1 me-3">
                 <a href="../../"><span class="fw-semibold d-block">
-                  Halaman User
+                  Halaman Utama
                   </span>
                 </a>
               </li>
