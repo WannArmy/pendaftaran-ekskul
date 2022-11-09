@@ -12,7 +12,7 @@ include '../luar.php';
         </div>
         <div class="card-body" style="margin-top:1em;">
           <!-- <div class="table-responsive" style="margin-top:3em;"> -->
-            <table id="table" class="table">
+            <table id="table" class="display">
               <thead>
                 <tr>
                   <th>Nama</th>
