@@ -11,17 +11,17 @@ include '../luar.php';
         <div class="card-header" style="border-bottom:black solid 1px;">Data User<br>
         </div>
         <div class="card-body" style="margin-top:1em;">
-          <div class="table-responsive" style="margin-top:3em;">
-            <table class="table" style="text-align: center;">
-              <thead class="table-primary">
+          <!-- <div class="table-responsive" style="margin-top:3em;"> -->
+            <table id="table" class="table">
+              <thead>
                 <tr>
-                  <th scope="col">Nama</th>
-                  <th scope="col">Username</th>
-                  <th scope="col">Email</th>
-                  <th scope="col">No.HP</th>
-                  <th scope="col">hak_akses</th>
-                  <th scope="col">Edit</th>
-                  <th scope="col">Delete</th>
+                  <th>Nama</th>
+                  <th>Username</th>
+                  <th>Email</th>
+                  <th>No.HP</th>
+                  <th>hak_akses</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
                 </tr>
               </thead>
               <tbody>
@@ -59,7 +59,7 @@ else{
 ?>
               </tbody>
             </table>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </div>
