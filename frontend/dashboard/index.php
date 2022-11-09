@@ -151,8 +151,14 @@ if ($_SESSION['hak_akses'] == "Murid") {
                   <div data-i18n="Without navbar">Saran</div>
                 </a>
               </li>
+              <li class="menu-item">
+                <a href="saran/index.php" class="menu-link"><i class='bx bxs-user-detail'></i>&nbsp&nbsp&nbsp
+                  <div data-i18n="Without navbar">Siswa</div>
+                </a>
+              </li>
             </ul>
           </li>
+          
 
 
           <!-- Components -->

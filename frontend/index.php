@@ -210,7 +210,7 @@ while($row = mysqli_fetch_array($query)){
                                         ?>
 
                 <p class="text">Bagi teman-teman yang berminat bergabung dengan ekskul untuk belajar dan
-                    bersenang-senang bersama, ayo langsung daftar di link berikut</p>
+                    bersenang-senang bersama, ayo langsung daftar di link berikut dan jika ada saran silakan klik link dibawah ini.</p>
         </div> 
         </div>
         </div> <!-- row -->
@@ -220,6 +220,7 @@ while($row = mysqli_fetch_array($query)){
                     <div class="col-md-12">
                         <div class="single-form form-group text-center">
                             <a href="formdaftar/" class="main-btn page-scroll">Daftar</a>
+                            <a href="saran/formsaran.php" class="main-btn page-scroll">Saran</a>
                         </div> <!-- single form -->
                     </div>
                 </div> <!-- row -->
