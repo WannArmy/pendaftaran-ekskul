@@ -8,21 +8,11 @@
                     <h2>Form Saran</h2>
                 </div>
                 <div class="card-body">
-                    <form method="post" action="#">
+                    <form method="post" action="../../../backend/saran/tambah.php">
                         <div class="form-group">
                             <label for="">Nama Lengkap</label>
                             <input type="text" class="form-control" name="nama" value="<?= $_SESSION['nama'] ?>" readonly>
                         </div>
-                        <br>
-                        <tr>
-                            <td>Kelas</td>
-                            <br>
-                            <select name='kelas' class="form-control">
-                                <option value='X'>X</option>
-                                <option value='XI'>XI</option>
-                                <option value='XII'>XII</option>
-                            </select>
-                        </tr>
                         <br>
                         <div class="form-group">
                             <label>Pilih Ekstrakurikuler</label>
@@ -41,11 +31,16 @@
                         </div>
                         <br>
                         <div class="form-group">
-                            <label for="">Saran</label>
-                            <textarea name="pesan" class="form-control" cols="30" rows="7"></textarea>
+                            <label for="">Judul</label>
+                            <input type="text" name="judul" class="form-control" cols="30" rows="7">
                         </div>
                         <br>
-                        <input class="btn btn-primary" type="submit" value="POST">
+                        <div class="form-group">
+                            <label for="">Saran</label>
+                            <textarea name="isi" class="form-control" cols="30" rows="7"></textarea>
+                        </div>
+                        <br>
+                        <input class="btn btn-primary" type="submit" name="submit" value="Submit">
                     </form>
                 </div>
             </div>

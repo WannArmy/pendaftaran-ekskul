@@ -36,7 +36,7 @@ if(mysqli_num_rows($query) > 0){
   ?>
   <tr>
   <td><?= $row['judul']; ?></td>
-  <td><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
+  <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td><?= $row['keterangan']; ?></td>
   <td><img src="../../assets/images/tmp/<?= $row['gambar']; ?>" alt="Tidak Ada Gambar" width=200em height=200em></td>

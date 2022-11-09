@@ -4,14 +4,19 @@ include '../../config/koneksi.php';
 if(isset($_POST['submit'])){
 
     $nama = $_POST['nama'];
-    $kelas = $_POST['kelas'];
     $ekskul = $_POST['ekskul'];
-    $pesan = $_POST['pesan'];
+    $judul = $_POST['judul'];
+    $isi = $_POST['isi'];
+    $tanggal = date("Y/m/d h:i:s");
     
-    $query = mysqli_query($db, "INSERT INTO saran VALUES('','$nama','$kelas','$ekskul','$pesan')");
-    echo "<script>alert('Daftar Ekskul Berhasil Diupload!'); location.href=('../../frontend/dashboard/ekskul')</script>";
+    $query = mysqli_query($db, "INSERT INTO saran VALUES('','$nama','$ekskul','$judul','$isi','$tanggal')");
+    if($query){
+    echo "<script>alert('Daftar Ekskul Berhasil Diupload!'); location.href=('../../frontend/dashboard/jadwal/')</script>";
     }
-
+    else{
+        echo "<script>alert('Daftar Ekskul Gagal Diupload!'); location.href=('../../frontend/dashboard/jadwal/')</script>";
+    }
+}
 else{
     header ('../../frontend/dashboard');
 }
