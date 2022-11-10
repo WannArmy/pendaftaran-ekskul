@@ -48,8 +48,8 @@ else{
                             <label for="">Kelas</label> 
                             <select name="kelas" id="" class="form-select" required>
                                 <option value="X">X</option>
-                                <option value="X">XI</option>
-                                <option value="X">XII</option>
+                                <option value="XI">XI</option>
+                                <option value="XII">XII</option>
                             </select>
                         </div>
                         <br>

@@ -65,7 +65,7 @@ if(mysqli_num_rows($query) > 0){
 }
 else{
   ?>
-  <td colspan=6> Data Masih Kosong, Mulai Isi Daftar Ekskul di Kanan Atas</td>
+  <td colspan=9 style="text-align:center;"> Data Masih Kosong, Mulai Isi Daftar Ekskul di Kanan Atas</td>
   <?php
 }
 ?>
