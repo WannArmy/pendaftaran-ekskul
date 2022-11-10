@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="form-group first">
                                     <label for="nohp">No.Hp</label>
-                                    <input type="number" name="nohp" class="form-control" id="nohp">
+                                    <input type="number" name="nohp" class="form-control" id="nohp" maxlength=13>
 
                                 </div>
                                 <div class="form-group first">
