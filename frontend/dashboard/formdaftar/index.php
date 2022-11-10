@@ -34,24 +34,14 @@ else{
                                 $query = mysqli_query($db, "SELECT * FROM list_ekskul ORDER BY judul ASC");
                                 if(mysqli_num_rows($query) > 0){
                                     while($row = mysqli_fetch_array($query)){
-                                        $nama = $_SESSION['nama'];
-                                $sql = mysqli_query($db,"SELECT * FROM minat WHERE siswa = '$nama'");
-                                if(mysqli_num_rows($query) > 0){
-                                    while($rows = mysqli_fetch_array($sql)){
-                                     $nama2 = $rows['ekskul'];   
-                                    }
-                                    if($nama2 != $row['judul']){
-                                    echo "<option value='".$row['judul']."'>".$row['judul']."</option>";
-                                    }
+                                        ?>
+                                        <option value="<?= $row['judul'] ?>"><?= $row['judul'] ?></option>
+                                        <?php
+
                                 }
-                                else{
-                                    echo "<option value='".$row['judul']."' disabled>".$row['judul']."</option>";
-                                }
-                                    }
-                                }
+                            }
                                 ?>
                             </select>
-                            <?= $nama2, $row['judul'], $rows['ekskul'] ?> 
                         </div>
                         <br>
                         <div class="form-group">

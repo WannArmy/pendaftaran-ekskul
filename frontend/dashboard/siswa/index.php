@@ -23,6 +23,7 @@ include '../luar.php';
                     echo "<th>Guru</th>";
                   }
                   ?>
+                  <th>Kelas</th>
                   <th>No.Hp (Siswa)</th>
                   <th>Email (Siswa)</th>
                   <th>Tanggal</th>
@@ -31,18 +32,24 @@ include '../luar.php';
               </thead>
               <tbody>
 <?php
+
 if($_SESSION['hak_akses'] == "Admin"){
-    $query = mysqli_query($db, "SELECT  s.siswa, l.nama, s.ekskul, l.nohp, l.email, s.tanggal FROM minat AS s LEFT JOIN user AS l ON s.siswa = l.nama");}
-else{
+   $query = mysqli_query($db, "SELECT * FROM list_ekskul");
+    if($query){
+      while($row = mysqli_fetch_array($query)){
+        $ekskul = $row['judul'];
+      }
+    }
+  }
+    else{
     $nama = $_SESSION['nama'];
-    $query = mysqli_query($db, "SELECT  s.siswa, l.nama, s.ekskul, l.nohp, l.email, s.tanggal FROM minat AS s LEFT JOIN user AS l ON s.siswa = l.nama WHERE l.nama = '$nama'");
-}
+    $query = mysqli_query($db, "SELECT l.guru, u.nama, l.judul, m.ekskul, m.kelas, u.nohp, u.email, m.siswa, m.tanggal FROM list_ekskul AS l INNER JOIN user AS u ON l.guru = u.nama INNER JOIN minat AS m ON l.judul = m.ekskul WHERE l.guru = '$nama' ORDER BY u.nama");
 if(mysqli_num_rows($query) > 0){
-  while($row = mysqli_fetch_array($query)){
+  while($row = mysqli_fetch_assoc($query)){
   ?>
   <tr>
-    <td><?= $no++ ?></td>
-  <td><?= $row['nama']; ?></td>
+    <td><?= $no++;?></td>
+  <td><?= $row['siswa']; ?></td>
   <td><?= $row['ekskul']; ?></td>
   <?php
   if($_SESSION['hak_akses'] == "Admin"){
@@ -58,6 +65,7 @@ if(mysqli_num_rows($query) > 0){
     }
   }
   ?>
+  <td><?= $row['kelas']; ?></td>
   <td><?= $row['nohp']; ?></td>
   <td><?= $row['email']; ?></td>
   <td><?= $row['tanggal']; ?></td>
@@ -68,13 +76,16 @@ if(mysqli_num_rows($query) > 0){
     </td>
   </tr>
   <?php
+    }
   }
-}
+
 else{
   ?>
   <td colspan=9 style="text-align:center;"> Data Masih Kosong, Belum ada murid yang protes wkwkkwkw</td>
+</tr>
   <?php
 }
+    }
 ?>
               </tbody>
             </table>
