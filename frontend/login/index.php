@@ -36,33 +36,33 @@ if(!isset($_SESSION['id'])){
           <div class="row justify-content-center">
             <div class="col-md-8">
               <div class="mb-4">
-              <h3>Sign In</h3>
+              <h3>Masuk</h3>
               <p class="mb-4">"Ekspresi wajah seseorarng merupakan cerminan dari kondisi batinnya."<br><span style="float:right;">- - Master Cheng Yen</span></p><br>
             </div>
             <form action="../../backend/proses-login.php" method="post">
               <div class="form-group first">
-                <label for="username">Username</label>
+                <label for="username">Nama Pengguna</label>
                 <input type="text" name="username" class="form-control" id="username">
 
               </div>
               <div class="form-group last mb-4">
-                <label for="password">Password</label>
+                <label for="password">Kata Sandi</label>
                 <input type="password" name="password" class="form-control" id="password">
                 
               </div>
               
               <div class="d-flex mb-5 align-items-center">
-                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                <label class="control control--checkbox mb-0"><span class="caption">Saya Ingat</span>
                   <input type="checkbox" checked="checked"/>
                   <div class="control__indicator"></div>
                 </label>
-                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                <span class="ml-auto"><a href="#" class="forgot-pass">Lupa Kata Sandi</a></span> 
               </div>
 
-              <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
+              <input type="submit" name="submit" value="Masuk" class="btn btn-block btn-primary">
               <br>
               <center>
-              <p class="mb-4">Belum Punya akun? <a href="../register/">Register Disini</a></p>
+              <p class="mb-4">Belum Punya akun? <a href="../register/">Daftar Disini</a></p>
               </center>
 <!-- 
               <span class="d-block text-left my-4 text-muted">&mdash; or login with &mdash;</span>

@@ -37,7 +37,7 @@
                     <div class="row justify-content-center">
                         <div class="col-md-8">
                             <div class="mb-4">
-                                <h3>Sign Up</h3>
+                                <h3>Daftar</h3>
                                 <p class="mb-4">Silahkan masukkan data diri kamu dibawah ini.</p>
                             </div>
                             <form action="../../backend/register/proses-register.php" method="post">
@@ -49,6 +49,11 @@
                                 <div class="form-group first">
                                     <label for="email">E-mail</label>
                                     <input type="email" name="email" class="form-control" id="email">
+
+                                </div>
+                                <div class="form-group first">
+                                    <label for="nohp">No.Hp</label>
+                                    <input type="number" name="nohp" class="form-control" id="nohp">
 
                                 </div>
                                 <div class="form-group first">

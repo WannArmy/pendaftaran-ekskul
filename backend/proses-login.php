@@ -12,11 +12,13 @@ if($check > 0){
     while($rows = mysqli_fetch_array($query)){
         $hak = $rows['hak_akses'];
         $id = $rows['id'];
+        $nama = $rows['nama'];
     };
     $_SESSION['id']=$id;
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;
     $_SESSION['hak_akses']=$hak;
+    $_SESSION['nama']=$nama;
 
     if($hak == 'Murid'){
         echo "<script>location.href=('../frontend/')</script>";
