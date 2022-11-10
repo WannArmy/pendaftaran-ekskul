@@ -19,6 +19,8 @@ if($check > 0){
     $_SESSION['password']=$password;
     $_SESSION['hak_akses']=$hak;
     $_SESSION['nama']=$nama;
+    $_SESSION['start'] = time();
+    $_SESSION['expire'] = $_SESSION['start'] + (1 * 7200);
 
     if($hak == 'Murid'){
         echo "<script>location.href=('../frontend/')</script>";

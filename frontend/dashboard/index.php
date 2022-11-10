@@ -1,6 +1,12 @@
 <?php
 session_start();
 if(isset($_SESSION['id'])){
+  $now = time();
+
+  if($now > $_SESSION['expire']){
+    session_destroy();
+    echo "<script>alert('Session has been destoryed!!');location.href=('/');</script>";
+  }
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr"
@@ -162,7 +168,13 @@ if(isset($_SESSION['id'])){
               <i class="menu-icon tf-icons bx bx-detail"></i>
               <div data-i18n="Layouts">List</div>
             </a>
-
+            <ul class="">
+              <li class="menu-item">
+                <a href="siswa/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
+                  <div data-i18n="Without menu">Siswa</div>
+                </a>
+              </li>
+            </ul>
             <ul class="">
               <li class="menu-item">
                 <a href="ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
@@ -185,10 +197,41 @@ if(isset($_SESSION['id'])){
               </i>&nbsp&nbsp&nbsp
               <div data-i18n="Layouts">User</div>
             </a>
+            <?php
+            $nama = $_SESSION['nama'];
+            $query = mysqli_query($db, "SELECT COUNT(id) as jmlh FROM minat WHERE siswa='$nama'");
+            while($row = mysqli_fetch_array($query)){
+                $jmlh = $row['jmlh'];
+            }
+            if($jmlh > 1){
+                echo "";
+            }
+            else{
+            ?>
             <ul>
-            <li class="menu-item">
+              <li class="menu-item">
+                <a href="formdaftar/" class="menu-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-journal-bookmark" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z" />
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
+                  </svg>
+                  &nbsp&nbsp&nbsp
+                  <div data-i18n="Without navbar">Form Pendaftaran</div>
+                </a>
+              </li>
+            </ul>
+            <?php
+            }
+            ?>
+            <ul>
+              <li class="menu-item">
                 <a href="jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
-                  <div data-i18n="Without menu">Jadwal</div>
+                  <div data-i18n="Without navbar">Jadwal</div>
                 </a>
               </li>
               <li class="menu-item">

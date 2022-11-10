@@ -19,6 +19,7 @@ include '../luar.php';
             <table id="table" class="display">
               <thead>
                 <tr>
+                  <th>No</th>
                   <th>Ekskul</th>
                   <th>Jadwal</th>
                   <th>Guru Pembimbing</th>
@@ -41,6 +42,7 @@ if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
   ?>
   <tr>
+  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
   <td><?= $row['guru']; ?></td>

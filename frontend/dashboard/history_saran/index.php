@@ -15,6 +15,7 @@ include '../luar.php';
             <table id="table" class="display">
               <thead>
                 <tr>
+                  <th>No</th>
                   <th>Nama</th>
                   <th>Ekskul</th>
                   <th>Guru Pembimbing</th>
@@ -32,6 +33,7 @@ if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
   ?>
   <tr>
+  <td><?= $no++ ?></td>
   <td><?= $row['nama']; ?></td>
   <td><?= $row['ekskul']; ?></td>
   <td><?= $row['guru']; ?></td>

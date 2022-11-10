@@ -47,7 +47,7 @@
 
                                 </div>
                                 <div class="form-group first">
-                                    <label for="email">E-mail</label>
+                                    <label for="email">E-mail(Sekolah)</label>
                                     <input type="email" name="email" class="form-control" id="email">
 
                                 </div>
