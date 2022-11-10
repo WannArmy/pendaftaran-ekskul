@@ -12,7 +12,7 @@ include '../luar.php';
         </div>
         <div class="card-body" style="margin-top:1em;">
           <!-- <div class="table-responsive" style="margin-top:3em;"> -->
-            <h1>Senin</h1>
+            <br><br><h3 style="text-align:center;">Senin</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -47,7 +47,7 @@ else{
               </tbody>
             </table>
             <br>
-            <h1>Selasa</h1>
+            <br><br><h3 style="text-align:center;">Selasa</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -83,7 +83,7 @@ else{
             </table>
             <br>
           <!-- </div> -->
-          <h1>Rabu</h1>
+          <br><br><h3 style="text-align:center;">Rabu</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -118,7 +118,7 @@ else{
               </tbody>
             </table>
             <br>
-            <h1>Kamis</h1>
+            <br><br><h3 style="text-align:center;">Kamis</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -153,7 +153,7 @@ else{
               </tbody>
             </table>
             <br>
-            <h1>Jumat</h1>
+            <br><br><h3 style="text-align:center;">Jumat</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -188,7 +188,7 @@ else{
               </tbody>
             </table>
             <br>
-            <h1>Sabtu</h1>
+            <br><br><h3 style="text-align:center;">Sabtu</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
@@ -223,7 +223,7 @@ else{
               </tbody>
             </table>
             <br>
-            <h1>Minggu</h1>
+            <br><br><h3 style="text-align:center;">Minggu</h3>
             <table class="table" style="text-align:center;">
               <thead>
                 <tr>
