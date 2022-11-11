@@ -59,6 +59,7 @@ while($row = mysqli_fetch_assoc($query)){
 <?php
 $siswa = $row['siswa'];
 $query3 = mysqli_query($db, "SELECT * FROM user WHERE nama = '$siswa'");
+
 if($query3){
   while($row2 = mysqli_fetch_array($query3)){
 ?>
@@ -97,8 +98,19 @@ if(mysqli_num_rows($query) > 0){
   <td><?= $row['siswa']; ?></td>
   <td><?= $row['ekskul']; ?></td>
   <td><?= $row['kelas']; ?></td>
-  <td><?= $row['nohp']; ?></td>
-  <td><?= $row['email']; ?></td>
+  <?php
+$siswa = $row['siswa'];
+$query3 = mysqli_query($db, "SELECT * FROM user WHERE nama = '$siswa'");
+
+if($query3){
+  while($row2 = mysqli_fetch_array($query3)){
+?>
+<td><?= $row2['nohp']; ?></td>
+<td><?= $row2['email']; ?></td>
+<?php
+  }
+}
+?>
   <td><?= $row['tanggal']; ?></td>
   <td>
   <a onclick="if(confirm('Yakin Ingin Menghapus Data Ini?') == true){ location.href = '../../../backend/saran/delete.php?id=<?= $row['id']; ?>';}else{alert('Proses hapus gagal');}" class="btn btn-outline-danger">
