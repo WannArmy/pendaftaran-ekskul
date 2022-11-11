@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="../assets/images/logo-cktc.png" type="image/png">
     <link rel="stylesheet" href="../login/fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="../login/css/owl.carousel.min.css">
@@ -47,13 +48,13 @@
 
                                 </div>
                                 <div class="form-group first">
-                                    <label for="email">E-mail</label>
+                                    <label for="email">E-mail(Sekolah)</label>
                                     <input type="email" name="email" class="form-control" id="email">
 
                                 </div>
                                 <div class="form-group first">
                                     <label for="nohp">No.Hp</label>
-                                    <input type="number" name="nohp" class="form-control" id="nohp">
+                                    <input type="number" name="nohp" class="form-control" id="nohp" maxlength=13>
 
                                 </div>
                                 <div class="form-group first">
