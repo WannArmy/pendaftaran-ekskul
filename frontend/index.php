@@ -62,12 +62,6 @@ session_start();
                                 <ul class="navbar-nav m-auto">
                                     <?php
                                     if(isset($_SESSION['hak_akses'])){
-                                        $now = time();
-
-                                        if($now > $_SESSION['expire']){
-                                          session_destroy();
-                                          echo "<script>alert('Session has been destoryed!!');location.href=('/');</script>";
-                                        }
                                     if($_SESSION['hak_akses'] == "Murid"){
 
                                     }

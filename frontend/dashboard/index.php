@@ -1,12 +1,6 @@
 <?php
 session_start();
 if(isset($_SESSION['id'])){
-  $now = time();
-
-  if($now > $_SESSION['expire']){
-    session_destroy();
-    echo "<script>alert('Session has been destoryed!!');location.href=('/');</script>";
-  }
 ?>
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light-style layout-menu-fixed" dir="ltr"
@@ -168,13 +162,7 @@ if(isset($_SESSION['id'])){
               <i class="menu-icon tf-icons bx bx-detail"></i>
               <div data-i18n="Layouts">List</div>
             </a>
-            <ul class="">
-              <li class="menu-item">
-                <a href="siswa/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
-                  <div data-i18n="Without menu">Siswa</div>
-                </a>
-              </li>
-            </ul>
+
             <ul class="">
               <li class="menu-item">
                 <a href="ekskul/index.php" class="menu-link"><i class='bx bxs-group'></i>&nbsp&nbsp&nbsp
@@ -197,41 +185,10 @@ if(isset($_SESSION['id'])){
               </i>&nbsp&nbsp&nbsp
               <div data-i18n="Layouts">User</div>
             </a>
-            <?php
-            $nama = $_SESSION['nama'];
-            $query = mysqli_query($db, "SELECT COUNT(id) as jmlh FROM minat WHERE siswa='$nama'");
-            while($row = mysqli_fetch_array($query)){
-                $jmlh = $row['jmlh'];
-            }
-            if($jmlh > 1){
-                echo "";
-            }
-            else{
-            ?>
             <ul>
-              <li class="menu-item">
-                <a href="formdaftar/" class="menu-link">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                    class="bi bi-journal-bookmark" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                      d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z" />
-                    <path
-                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z" />
-                    <path
-                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z" />
-                  </svg>
-                  &nbsp&nbsp&nbsp
-                  <div data-i18n="Without navbar">Form Pendaftaran</div>
-                </a>
-              </li>
-            </ul>
-            <?php
-            }
-            ?>
-            <ul>
-              <li class="menu-item">
+            <li class="menu-item">
                 <a href="jadwal/index.php" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
-                  <div data-i18n="Without navbar">Jadwal</div>
+                  <div data-i18n="Without menu">Jadwal</div>
                 </a>
               </li>
               <li class="menu-item">
@@ -295,6 +252,7 @@ if(isset($_SESSION['id'])){
                         </div>
                         <span class="fw-semibold d-block">
 
+                          
                           <?php
                           if (!isset($_SESSION['username'])) {
                             echo "";
@@ -526,6 +484,117 @@ if(isset($_SESSION['id'])){
                   </div>
                 </div>
               </div>
+
+              <div class="divider">
+                <div class="divider-text">
+                  <h2>Saran</h2>
+                </div>
+              </div>
+
+              <div class="row container-xxl container-p-y">
+                <!-- Earnings (Monthly) Card Example -->
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="font-weight-bold text-primary text-uppercase">
+                            <img src="../assets/assets/img/avatars/avatar.png" alt
+                              class="w-px-50 h-auto rounded-circle" /></div>
+                          <div class="mb-0 font text-gray">Yoga</div>
+                          <br />
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang
+                            sedikit, tapi selebihnya bagus."</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="font-weight-bold text-primary text-uppercase">
+                            <img src="../assets/assets/img/avatars/avatar.png" alt
+                              class="w-px-50 h-auto rounded-circle" /></div>
+                          <div class="mb-0 font text-gray">Yoga</div>
+                          <br />
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang
+                            sedikit, tapi selebihnya bagus."</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="font-weight-bold text-primary text-uppercase">
+                            <img src="../assets/assets/img/avatars/avatar.png" alt
+                              class="w-px-50 h-auto rounded-circle" /></div>
+                          <div class="mb-0 font text-gray">Yoga</div>
+                          <br />
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang
+                            sedikit, tapi selebihnya bagus."</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="font-weight-bold text-primary text-uppercase">
+                            <img src="../assets/assets/img/avatars/avatar.png" alt
+                              class="w-px-50 h-auto rounded-circle" /></div>
+                          <div class="mb-0 font text-gray">Yoga</div>
+                          <br />
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang
+                            sedikit, tapi selebihnya bagus."</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <div class="col mr-2">
+                          <div class="font-weight-bold text-primary text-uppercase">
+                            <img src="../assets/assets/img/avatars/avatar.png" alt
+                              class="w-px-50 h-auto rounded-circle" /></div>
+                          <div class="mb-0 font text-gray">Yoga</div>
+                          <br />
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">"Wahhh aplikasinya ada yang kurang
+                            sedikit, tapi selebihnya bagus."</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-xl-3 col-md-8 mb-4">
+                  <div class="card border-left-primary shadow h-100 py-2">
+                    <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                        <center><a href="halamansaran"><img src="https://cdn-icons-png.flaticon.com/512/262/262038.png"
+                              style="width:80px;height:80px;"></a></center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
