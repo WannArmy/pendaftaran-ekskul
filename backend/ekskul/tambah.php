@@ -14,6 +14,17 @@ if(isset($_POST['submit'])){
     $tipegambar = $_FILES['gambar']['type'];
     $tmpgambar = $_FILES['gambar']['tmp_name'];
     $lokgambar = '../../frontend/assets/images/tmp/';
+    
+    $query = mysqli_query($db, "SELECT * FROM list_ekskul");
+    if(mysqli_num_rows($query) > 0){
+        while($row = mysqli_fetch_array($query)){
+            $nmgambar = $row['gambar'];
+        }
+    }
+    if($nmgambar == $namagambar){
+        echo "<script>alert('Nama Gambar sudah dipakai, ubah gambar terlebih dahulu'); location.href=('../../frontend/dashboard/ekskul/tambah-ekskul.php')</script>";
+    }
+    else{
 
     if(is_uploaded_file($tmpgambar)){
         if(move_uploaded_file($tmpgambar, $lokgambar.$namagambar)){
@@ -31,6 +42,7 @@ if(isset($_POST['submit'])){
     $query = mysqli_query($db, "INSERT INTO list_ekskul VALUES('','$judul','$keterangan','$guru','$hari','$jam','')");
     echo "<script>alert('Daftar Ekskul Berhasil Diupload!'); location.href=('../../frontend/dashboard/ekskul')</script>";
     }
+}
 }
 else{
     header ('../../frontend/dashboard');

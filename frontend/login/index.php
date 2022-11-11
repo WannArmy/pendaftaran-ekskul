@@ -10,6 +10,7 @@ if(!isset($_SESSION['id'])){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
+    <link rel="shortcut icon" href="../assets/images/logo-cktc.png" type="image/png">
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">

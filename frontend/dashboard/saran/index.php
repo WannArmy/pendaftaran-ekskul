@@ -16,7 +16,7 @@
                         <br>
                         <div class="form-group">
                             <label>Pilih Ekstrakurikuler</label>
-                            <select class="form-control" name="ekskul">
+                            <select class="form-select" name="ekskul">
                                 <?php
                                 $query = mysqli_query($db, "SELECT * FROM list_ekskul ORDER BY judul ASC");
                                 if(mysqli_num_rows($query) > 0){
