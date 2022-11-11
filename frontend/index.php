@@ -80,9 +80,6 @@ session_start();
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#service">EKSKUL</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="about">ABOUT US</a>
-                                    </li>
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
