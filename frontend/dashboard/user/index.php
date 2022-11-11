@@ -15,7 +15,6 @@ include '../luar.php';
             <table id="table" class="display">
               <thead>
                 <tr>
-                  <th>No</th>
                   <th>Nama</th>
                   <th>Username</th>
                   <th>Email</th>
@@ -32,7 +31,6 @@ if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
   ?>
   <tr>
-    <td><?= $no++ ?></td>
   <td><?= $row['nama']; ?></td>
   <td><?= $row['username']; ?></td>
   <td><?= $row['email']; ?></td>
