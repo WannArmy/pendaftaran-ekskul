@@ -86,6 +86,9 @@ session_start();
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#service">EKSKUL</a>
                                     </li>
+                                    <li class="nav-item">
+                                        <a class="page-scroll" href="about">TENTANG KAMI</a>
+                                    </li>
                                     <?php
                                     if(!isset($_SESSION['username'])){
                                         echo "<li class='nav-item'>
@@ -276,7 +279,7 @@ while($row = mysqli_fetch_array($query)){
                     </div>
                     <div class="col-lg-3 col-md-4 col-sm-6">
                         <div class="footer-link">
-                            <h6 class="footer-title">Form & Web</h6>
+                            <h6 class="footer-title">Profil</h6>
                             <ul>
                                 <?php
                                     if(!isset($_SESSION['username'])){

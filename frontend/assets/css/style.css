@@ -290,6 +290,8 @@ p {
 }
 
 .navgition .navbar .navbar-nav .nav-item a {
+  text-align: center;
+  width: 85px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -463,7 +465,7 @@ p {
 }
 
 .header-hero .header-content .header-title {
-  font-size: 44px;
+  font-size: 55px;
   line-height: 55px;
   color: #121212;
   font-weight: 600;
@@ -571,7 +573,6 @@ p {
 ===========================*/
 .services-area {
   padding-top: 120px;
-  padding-bottom: 120px;
   position: relative;
 }
 
