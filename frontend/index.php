@@ -203,7 +203,7 @@ while($row = mysqli_fetch_array($query)){
                             <div class="contact-form">
                                 <div class="col-md-12">
                                     <div class="single-form form-group text-center">
-                                        <a href="login/" class="main-btn page-scroll">Daftar</a>
+                                        <a href="login/" class="main-btn page-scroll">Dashboard</a>
                                     </div> <!-- single form -->
                                 </div>
                             </div> <!-- row -->
