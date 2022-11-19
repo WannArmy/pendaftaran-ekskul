@@ -158,12 +158,13 @@ session_start();
 
             <!-- flipcard -->
             <div class="scene">
+                
             <?php
-include '../config/koneksi.php';
-$query = mysqli_query($db, "SELECT * FROM list_ekskul");
-if(mysqli_num_rows($query) > 0){
-while($row = mysqli_fetch_array($query)){
-?>
+            include '../config/koneksi.php';
+            $query = mysqli_query($db, "SELECT * FROM list_ekskul");
+            if(mysqli_num_rows($query) > 0){
+            while($row = mysqli_fetch_array($query)){
+            ?>
 
                 <label class="card-wrap">
                     <input type="checkbox" class="flipcard">

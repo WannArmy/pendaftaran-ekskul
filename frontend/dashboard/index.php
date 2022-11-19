@@ -527,6 +527,42 @@ if(isset($_SESSION['id'])){
                   </div>
                 </div>
               </div>
+
+              <div class="col-lg-12 col-md-10 col-14 mb-4">
+                <div class="card">
+                  <div class="d-flex align-items-end row">
+                    <div class="col-sm-7">
+                      <div class="card-body">
+                        <h2 class="card-title text-primary">Eskul : ( namaeksul )
+                        </h2>
+                        <p class="mb-4">
+                          <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                        <i class='bx bxs-user'></i>&nbsp&nbsp&nbspjumlah murid :
+                        <?php
+                                              $query = mysqli_query($db, "SELECT COUNT('id') as jmlh FROM user WHERE hak_akses = 'Murid'");
+                                              if(mysqli_num_rows($query) > 0){
+                                                while($row = mysqli_fetch_array($query)){
+                                                  echo $row['jmlh'];
+                                                }
+                                              }
+                                              ?>
+
+                          <br /><br /><button class="btn btn-outline-success">Halaman eskul...</button>
+                          </div>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-sm-5 text-center text-sm-left">
+                      <div class="card-body pb-0 px-0 px-md-4">
+                        <img src="../assets/assets/img/illustrations/girl-doing-yoga-light.png" height="140"
+                          alt="View Badge User" data-app-dark-img="illustrations/man-with-laptop-dark.png"
+                          data-app-light-img="illustrations/girl-doing-yoga-light.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
               <!-- Footer -->
               <footer class="content-footer footer bg-footer-theme">
                 <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
