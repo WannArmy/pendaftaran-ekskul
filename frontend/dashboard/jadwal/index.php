@@ -28,8 +28,21 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='senin'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
   ?>
-  <tr>
   <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
@@ -63,9 +76,21 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='selasa'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
@@ -99,9 +124,21 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='rabu'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
@@ -134,9 +171,23 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='kamis'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+        var_dump($ekskul);
+        var_dump($ekskul2);
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
@@ -166,12 +217,23 @@ else{
               <tbody>
 <?php
 $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='jumat'");
-$no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
@@ -204,9 +266,21 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='sabtu'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>
@@ -239,9 +313,21 @@ $query = mysqli_query($db, "SELECT * FROM list_ekskul WHERE hari='minggu'");
 $no = 1;
 if(mysqli_num_rows($query) > 0){
   while($row = mysqli_fetch_array($query)){
-  ?>
-  <tr>
-  <td><?= $no++ ?></td>
+    $nama = $_SESSION['nama'];
+    $ekskul = $row['judul'];
+    $query2 = mysqli_query($db, "SELECT * FROM minat WHERE siswa='$nama' AND ekskul='$ekskul'");
+    while($row2 = mysqli_fetch_array($query2)){
+      $ekskul2 = $row2['ekskul'];
+      if($ekskul == $ekskul2){
+        ?>
+          <tr style="background-color:grey;color:white;">
+        <?php
+      }
+      else{
+        echo "<tr>";
+      }
+    }
+  ?>  <td><?= $no++ ?></td>
   <td><?= $row['judul']; ?></td>
   <td><?= $row['guru']; ?></td>
   <td style="text-transform:capitalize;"><?= $row['hari']; ?>, <?= $row['jam']; ?></td>

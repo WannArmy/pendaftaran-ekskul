@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $hak_akses = $_POST['hak_akses'];
 
     $query = mysqli_query($db, "UPDATE user SET nama='$nama',username='$username',email='$email',nohp='$nohp',hak_akses='$hak_akses' WHERE id=$id");
-    echo "<script>alert('Daftar User Berhasil Dibah!');location.href=('../../frontend/dashboard/user')</script>";
+    echo "<script>alert('Data User Berhasil Diubah!');location.href=('../../frontend/dashboard/user')</script>";
 }
 else{
     header ('../../frontend/dashboard');

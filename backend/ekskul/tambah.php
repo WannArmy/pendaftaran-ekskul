@@ -30,7 +30,7 @@ if(isset($_POST['submit'])){
         if(move_uploaded_file($tmpgambar, $lokgambar.$namagambar)){
             $query = mysqli_query($db, "INSERT INTO list_ekskul VALUES('','$judul','$keterangan','$guru','$hari','$jam','$namagambar')");
             if($query){
-                echo "<script>alert('Daftar Ekskul Berhasil Diupload!');location.href=('../../frontend/dashboard/ekskul')</script>";
+                echo "<script>alert('Data Ekskul Berhasil Diupload!');location.href=('../../frontend/dashboard/ekskul')</script>";
             }
         }
         else{
@@ -40,7 +40,7 @@ if(isset($_POST['submit'])){
     else{
 
     $query = mysqli_query($db, "INSERT INTO list_ekskul VALUES('','$judul','$keterangan','$guru','$hari','$jam','')");
-    echo "<script>alert('Daftar Ekskul Berhasil Diupload!'); location.href=('../../frontend/dashboard/ekskul')</script>";
+    echo "<script>alert('Data Ekskul Berhasil Diupload!'); location.href=('../../frontend/dashboard/ekskul')</script>";
     }
 }
 }

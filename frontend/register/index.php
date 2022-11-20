@@ -24,7 +24,7 @@
 <body>
     <?php
     if (isset($_SESSION['pesan'])) {
-        echo "alert(pesan)";
+        echo "<script>alert('".$_SESSION['pesan']."');</script>";
     }
     ?>
 

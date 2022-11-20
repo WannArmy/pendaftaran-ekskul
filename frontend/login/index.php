@@ -24,8 +24,11 @@ if(!isset($_SESSION['id'])){
     <title>Login</title>
   </head>
   <body>
-  
-
+  <?php
+    if (isset($_SESSION['pesan'])) {
+        echo "<script>alert('".$_SESSION['pesan']."');</script>";
+    }
+    ?>
   
   <div class="content">
     <div class="container">

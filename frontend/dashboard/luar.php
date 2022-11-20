@@ -1,7 +1,7 @@
 <?php
 session_start();
 if(!isset($_SESSION['id'])){
-    echo "<script>alert('Silahkan masuk terlebih dahulu untuk mengakses dashboard');location.href=('../');</script>";
+    echo "<script>alert('Silahkan masuk terlebih dahulu untuk mengakses dashboard');location.href=('../../');</script>";
 }
 $now = time();
 $no = 1;
@@ -131,11 +131,10 @@ include '../../../config/koneksi.php';
                             <div data-i18n="Analytics">Dashboard</div>
                         </a>
                     </li>
-                    <?php
-          if($_SESSION['hak_akses'] != "Murid"){
-          if($_SESSION['hak_akses'] == "Admin"){
-          ?>
                     <!-- Layouts -->
+                    <?php
+                    if($_SESSION['hak_akses'] == "Admin"){
+                    ?>
                     <li class="menu-item">
                         <a href="#" class="menu-link menu-toggle">
                             <i class="menu-icon tf-icons bx bx-user-pin"></i>
@@ -167,7 +166,7 @@ include '../../../config/koneksi.php';
                             </li>
                         </ul>
                         <?php
-                        }
+                    }
                         ?>
                     <li class="menu-item">
                         <a href="#" class="menu-link menu-toggle">
@@ -175,6 +174,9 @@ include '../../../config/koneksi.php';
                             <div data-i18n="Layouts">List</div>
                         </a>
                         <ul class="">
+                            <?php
+                            if($_SESSION['hak_akses'] != "Murid"){
+                            ?>
                             <li class="menu-item">
                                 <a href="../siswa/" class="menu-link"><i class='bx bxs-user-account'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without menu">Siswa</div>
@@ -187,35 +189,58 @@ include '../../../config/koneksi.php';
                                     <div data-i18n="Without menu">Ekskul</div>
                                 </a>
                             </li>
-
                             <li class="menu-item">
                                 <a href="../list_saran/" class="menu-link"><i
                                         class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without navbar">Saran</div>
                                 </a>
                             </li>
+                            <li class="menu-item">
+                                <a href="../list_pesan/" class="menu-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path
+                      d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                            </svg>    
+                                &nbsp&nbsp&nbsp
+                                    <div data-i18n="Without navbar">Pesan</div>
+                                </a>
+                            </li>
+                            <?php
+                            }
+                            ?>
+                            <li class="menu-item">
+                                <a href="../jadwal/" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
+                                    <div data-i18n="Without menu">Jadwal</div>
+                                </a>
+                            </li>
                         </ul>
-                        <?php
-        }
-            ?>
+                        </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link menu-toggle">
                             <i class='bx bxs-user-detail'>
                             </i>&nbsp&nbsp&nbsp
                             <div data-i18n="Layouts">User</div>
                         </a>
+                        <ul>
                         <?php
+                            if($_SESSION['hak_akses'] == "Murid"){
                         $nama = $_SESSION['nama'];
                         $query = mysqli_query($db, "SELECT COUNT(id) as jmlh FROM minat WHERE siswa='$nama'");
                         while($row = mysqli_fetch_array($query)){
                             $jmlh = $row['jmlh'];
                         }
                         if($jmlh > 1){
-                            echo "";
+                            ?>
+                            <li class="menu-item">
+                                <a href="" class="menu-link">
+                                Anda sudah mendaftar 2 ekskul!
+                                </a>
+                            </li>
+                        <?php
                         }
                         else{
                         ?>
-                        <ul>
                             <li class="menu-item">
                                 <a href="../formdaftar/" class="menu-link">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -231,22 +256,39 @@ include '../../../config/koneksi.php';
                                     <div data-i18n="Without navbar">Form Pendaftaran</div>
                                 </a>
                             </li>
-                        </ul>
-                        <?php
+                            <?php
+                            }
                         }
-                        ?>
-                        <ul>
+                            if($_SESSION['hak_akses'] != "Murid"){
+                            ?>
                             <li class="menu-item">
-                                <a href="../jadwal/" class="menu-link"><i class='bx bxs-calendar'></i>&nbsp&nbsp&nbsp
-                                    <div data-i18n="Without menu">Jadwal</div>
-                                </a>
-                            </li>
+                <a href="../pesan/" class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path
+                      d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576 6.636 10.07Zm6.787-8.201L1.591 6.602l4.339 2.76 7.494-7.493Z" />
+                  </svg>&nbsp&nbsp&nbsp
+                  <div data-i18n="Without navbar">Pesan</div>
+                </a>
+              </li>
+              <?php
+                            }
+              ?>
+                        </ul>
+
+                        <ul>
+                            <?php
+                            if($_SESSION['hak_akses'] == "Murid"){
+                            ?>
                             <li class="menu-item">
                                 <a href="../saran/" class="menu-link"><i
                                         class='bx bx-comment-detail'></i>&nbsp&nbsp&nbsp
                                     <div data-i18n="Without navbar">Saran</div>
                                 </a>
                             </li>
+                            <?php
+                            }
+                            ?>
 
                         </ul>
                     </li>

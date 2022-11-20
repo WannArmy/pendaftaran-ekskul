@@ -11,7 +11,7 @@ if(isset($_POST['submit'])){
     $jam = $_POST['jam'];
 
     $query = mysqli_query($db, "UPDATE list_ekskul SET judul='$judul',keterangan='$keterangan',guru='$guru',hari='$hari',jam='$jam' WHERE id=$id");
-    echo "<script>alert('Daftar Ekskul Berhasil Dibah!');location.href=('../../frontend/dashboard/ekskul')</script>";
+    echo "<script>alert('Data Ekskul Berhasil Dibah!');location.href=('../../frontend/dashboard/ekskul')</script>";
 }
 else{
     header ('../../frontend/dashboard');

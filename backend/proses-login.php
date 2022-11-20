@@ -23,10 +23,10 @@ if($check > 0){
     $_SESSION['expire'] = $_SESSION['start'] + (1 * 7200);
 
     if($hak == 'Murid'){
-        echo "<script>location.href=('../frontend/')</script>";
+        echo "<script>alert('Selamat datang, ".$nama."');location.href=('../frontend/')</script>";
     }
     else{
-        echo "<script>location.href=('../frontend/dashboard/')</script>";
+        echo "<script>alert('Selamat datang, ".$nama."');location.href=('../frontend/dashboard/')</script>";
     }
 }
 else{

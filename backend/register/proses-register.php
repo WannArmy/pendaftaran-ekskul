@@ -16,9 +16,11 @@ if (isset($_POST['submit'])) {
     $query = mysqli_query($db, $sql);
 
     if ($query) {
+        $_SESSION['pesan'] = "Register Berhasil";
         header('Location: ../../frontend/login/index.php');
     } else {
+        $_SESSION['pesan'] = "Register Gagal";
         header('Location: ../../frontend/register/index.php');
-        $_SESSION['pesan'] = "Gagal register X";
+
     }
 }
